@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./output.css">
+
+</head>
+
+<body>
+    <header class="">
+        <nav class="bg-darkBlue relative z-10">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button id="menu-button" class="rounded-lg md:hidden focus:outline-none focus:shadow-outline">
+                            <svg fill="#FFFFFF" viewBox="0 0 20 20" class="w-6 h-6">
+                                <path class="closed-path" fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                                <path class="open-path" fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" style="display: none;"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch">
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="#"
+                                    class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-medium"
+                                    aria-current="page">Головна</a>
+                                <a href="#"
+                                    class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-medium">Інформаційна
+                                    прозорість</a>
+                                <a href="#"
+                                    class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-medium">Освітній
+                                    процес</a>
+                                <a href="#"
+                                    class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-medium">Учням</a>
+                                <a href="#"
+                                    class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-medium">Учителям</a>
+                                <a href="#"
+                                    class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-medium">Батькам</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <a href="https://www.facebook.com/groups/188966575698045/">
+                            <svg fill="#FFFFFF"
+                                class="h-8 w-8 p-1 rounded-sm transition-colors ease-in-out delay-100 hover:bg-blue"
+                                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="XMLID_834_">
+                                        <path id="XMLID_835_"
+                                            d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pb-3 pt-2">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <!-- <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                                aria-current="page">Головна</a> -->
+                    <a href="#"
+                        class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-medium"
+                        aria-current="page">Головна</a>
+                    <a href="#"
+                        class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-medium">Інформаційна
+                        прозорість</a>
+                    <a href="#"
+                        class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-medium">Освітній
+                        процес</a>
+                    <a href="#"
+                        class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-medium">Учням</a>
+                    <a href="#"
+                        class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-medium">Учителям</a>
+                    <a href="#"
+                        class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-medium">Батькам</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="relative isolate overflow-hidden bg-gradient-to-br from-darkBlue to-orange py-24 sm:py-32">
+            <img src="./images/school.jpg" alt=""
+                class="opacity-10 absolute inset-0 z-1 h-full w-full object-cover object-right md:object-center">
+            <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+                aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-blue opacity-30"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="absolute -top-52 left-1/2 z-1 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+                aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-blue opacity-30"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="relative z-20 mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-4xl lg:mx-0">
+                    <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Комунальний
+                        заклад "Ліцей
+                        №3
+                        Козятинської міської ради Вінницької області"</h2>
+                    <!-- <p class="mt-6 text-lg leading-8 text-gray-300">*тут має бути якась потужна мотиваційна цитата*</p> -->
+                </div>
+                <!-- <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                    <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                        <div class="flex flex-col-reverse">
+                            <dt class="text-base leading-7 text-gray-300">Учні</dt>
+                            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">300</dd>
+                        </div>
+                        <div class="flex flex-col-reverse">
+                            <dt class="text-base leading-7 text-gray-300">Учителі</dt>
+                            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">34</dd>
+                        </div>
+                        <div class="flex flex-col-reverse">
+                            <dt class="text-base leading-7 text-gray-300">Перемоги</dt>
+                            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">+10</dd>
+                        </div>
+                    </dl>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Blog Section -->
+        <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Новини</h2>
+                    <p class="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert
+                        advice.</p>
+                </div>
+                <div id="articles-container"
+                    class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    <!-- Facebook Posts... -->
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="grid grid-cols-1 col-start-2 lg:grid-cols-2 gap-8 px-4 py-8 bg-gradient-to-br from-darkBlue to-blue">
+            <!-- Contacts -->
+            <div class="rounded-2xl isolate bg-white px-6 py-24 sm:py-32 lg:px-8 flex flex-col items-center">
+                <div class="mx-auto text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Контакти</h2>
+                    <p class="mt-2 text-lg leading-8 text-gray-600">...тут можна якийсь текст втулити</p>
+                </div>
+                <nav class="list-none mt-12 text-left">
+                    <li class="mt-3">
+                        <a
+                            class="text-gray-500 cursor-pointer transition-colors ease-in-out delay-100 hover:text-gray-900 flex gap-x-1 mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z">
+                                </path>
+                            </svg>
+                            ТЕЛЕФОН ВСТАВИТИ</a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="text-gray-500 cursor-pointer transition-colors ease-in-out delay-100 hover:text-gray-900 flex gap-x-1 mt-2"
+                            href="mailto: knz_3@ukr.net">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
+                                </path>
+                            </svg>
+                            knz_3@ukr.net</a>
+                    </li>
+                    <li class="mt-3 max-w-lg">
+                        <a
+                            class="text-gray-500 cursor-pointer transition-colors ease-in-out delay-100 hover:text-gray-900 flex gap-x-1 mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z">
+                                </path>
+                            </svg>
+                            <p class="w-2/3">
+                                Україна, Вінницька область,
+                                м.Козятин, вул. Степана Бандери, 41
+                            </p>
+                        </a>
+                    </li>
+                </nav>
+            </div>
+            <!-- Form -->
+            <div class="rounded-2xl isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Напишіть нам</h2>
+                    <p class="mt-2 text-lg leading-8 text-gray-600">...якщо з'явились питання
+                    </p>
+                </div>
+                <form action="#" method="POST" class="mx-auto mt-16 max-w-xl">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                        <div class="sm:col-span-2">
+                            <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Тема
+                                листа</label>
+                            <div class="mt-2.5">
+                                <input type="text" name="company" id="company" autocomplete="organization"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+                            <div class="mt-2.5">
+                                <input type="email" name="email" id="email" autocomplete="email"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message"
+                                class="block text-sm font-semibold leading-6 text-gray-900">Повідомлення</label>
+                            <div class="mt-2.5">
+                                <textarea name="message" id="message" rows="4"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <button type="submit"
+                            class="block w-full rounded-md bg-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Відправити</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- component -->
+    <footer class="w-full text-lightBlue bg-darkBlue body-font">
+        <div
+            class="container flex justify-center flex-col px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+            <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:mt-0 md:text-left">
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-10 text-sm font-bold tracking-widest uppercase title-font">
+                        <a href="">Головна</a>
+                    </h2>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-10 text-sm font-bold tracking-widest uppercase title-font">
+                        <a href="">Інформаційна прозорість</a>
+                    </h2>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font">
+                        Освітній процес
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Виховна робота</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Методична робота</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Вибір підручників</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Соціально-психологічна
+                                служба</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Зарахування та відрахування
+                                учнів</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Державна служба якості
+                                освіти</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Робота з обдарованими дітьми</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font">
+                        Учням
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Дистанційне навчання</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Учнівське самоврядування</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Правила для учнів</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Про булінг</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Телефони довіри</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">ЗНО / НМТ</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Освітні ресурси</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Дії в разі надзвичайних
+                                ситуацій</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font">
+                        Учителям
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Атестація</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Підвищення кваліфікації
+                                педагогів</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Освітні ресурси</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font">
+                        Батькам
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Правила зарахування до
+                                закладу</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Різне</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font">
+                        Контакти</h2>
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="cursor-pointer">ТЕЛЕФОН ВСТАВИТИ</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer" href="mailto: knz_3@ukr.net">knz_3@ukr.net</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="cursor-pointer">Україна, Вінницька область,
+                                м.Козятин, вул. Степана Бандери, 41</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
