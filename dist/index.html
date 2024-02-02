@@ -26,17 +26,18 @@
                             <svg fill="#FFFFFF" viewBox="0 0 20 20" class="w-6 h-6">
                                 <path class="closed-path" fill-rule="evenodd"
                                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
+                                    clip-rule="evenodd">
+                                </path>
                                 <path class="open-path" fill-rule="evenodd"
                                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" style="display: none;"></path>
+                                    clip-rule="evenodd" style="display: none;">
+                                </path>
                             </svg>
                         </button>
                     </div>
                     <div class="flex flex-1 items-center justify-center sm:items-stretch">
                         <div class="hidden sm:ml-6 sm:block">
                             <div class="flex space-x-4">
-                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                 <a href="#"
                                     class="text-lightBlue transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-medium"
                                     aria-current="page">Головна</a>
@@ -102,7 +103,7 @@
             </div>
         </nav>
 
-        <div class="relative isolate overflow-hidden bg-gradient-to-br from-darkBlue to-orange py-24 sm:py-32">
+        <div class="relative isolate overflow-hidden bg-gradient-to-tr from-darkBlue to-orange py-24 sm:py-32">
             <img src="./images/school.jpg" alt=""
                 class="opacity-10 absolute inset-0 z-1 h-full w-full object-cover object-right md:object-center">
             <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -155,10 +156,28 @@
                 </div>
                 <div id="articles-container"
                     class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                    <!-- Facebook Posts... -->
+                    <!-- Articles will be appended here -->
                 </div>
+                <button id="read-more-btn"
+                    class="mt-4 px-6 py-3 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 focus:outline-none">
+                    Read More
+                </button>
             </div>
         </div>
+
+        <!-- <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Новини</h2>
+                    <p class="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert
+                        advice.</p>
+                </div>
+                <div id="articles-container"
+                    class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                     Facebook Posts... 
+                </div>
+            </div>
+        </div> -->
 
         <div
             class="grid grid-cols-1 col-start-2 lg:grid-cols-2 gap-8 px-4 py-8 bg-gradient-to-br from-darkBlue to-blue">
@@ -382,6 +401,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="embed.js"></script>
 </body>
 
 </html>
