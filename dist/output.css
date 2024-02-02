@@ -1037,6 +1037,14 @@ select {
   top: -13rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -1051,6 +1059,30 @@ select {
 
 .right-0 {
   right: 0px;
+}
+
+.top-2\/3 {
+  top: 66.666667%;
+}
+
+.top-3\/4 {
+  top: 75%;
+}
+
+.bottom-auto {
+  bottom: auto;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-auto {
+  top: auto;
+}
+
+.-top-4 {
+  top: -1rem;
 }
 
 .isolate {
@@ -2466,6 +2498,10 @@ select {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
@@ -2667,14 +2703,14 @@ select {
   padding-bottom: 6rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-3 {
@@ -2894,7 +2930,7 @@ select {
 
 .text-lightBlue {
   --tw-text-opacity: 1;
-  color: rgb(233 246 255 / var(--tw-text-opacity));
+  color: rgb(181 225 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3236,10 +3272,6 @@ select {
   transition-delay: 100ms;
 }
 
-.delay-300 {
-  transition-delay: 300ms;
-}
-
 .delay-75 {
   transition-delay: 75ms;
 }
@@ -3327,6 +3359,11 @@ select {
 .hover\:text-darkBlue:hover {
   --tw-text-opacity: 1;
   color: rgb(40 2 116 / var(--tw-text-opacity));
+}
+
+.hover\:text-lightBlue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(181 225 255 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
