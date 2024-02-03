@@ -1138,6 +1138,11 @@ select {
   margin-right: auto;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .-mb-10 {
   margin-bottom: -2.5rem;
 }
@@ -3011,6 +3016,10 @@ select {
   opacity: 0.3;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -3302,6 +3311,12 @@ select {
   transition-duration: 150ms;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .delay-100 {
   transition-delay: 100ms;
 }
@@ -3384,6 +3399,11 @@ select {
 .hover\:bg-orange:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(254 122 54 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-lightBlue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(181 225 255 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
