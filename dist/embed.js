@@ -28,7 +28,7 @@ function createArticle(data) {
 
     const avatarElement = document.createElement('img');
     avatarElement.src = data.author.avatar;
-    avatarElement.alt = '';
+    avatarElement.alt = 'fb-avatar';
     avatarElement.className = 'h-10 w-10 rounded-full bg-gray-50';
 
     const authorDetailsElement = document.createElement('div');
