@@ -1231,6 +1231,10 @@ select {
   margin-top: 2rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -3662,6 +3666,10 @@ select {
 
   .sm\:items-stretch {
     align-items: stretch;
+  }
+
+  .sm\:gap-y-0 {
+    row-gap: 0px;
   }
 
   .sm\:px-6 {
