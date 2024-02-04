@@ -2,6 +2,7 @@ const articlesContainer = document.getElementById('articles-container');
 const readMoreButton = document.getElementById('read-more-btn');
 const showLessButton = document.getElementById('show-less-btn');
 const shadow = document.getElementById('white-shadow');
+const loader = document.getElementById('loader');
 
 let newsArray = [];
 
@@ -119,6 +120,8 @@ fetch('./posts.json')
         if (json.length > 9) {
             readMoreButton.classList.remove('hidden');
         }
+
+        loader.classList.add('hidden');
     });
 
 // Event listener for the "Read More" button

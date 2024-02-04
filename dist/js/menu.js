@@ -1,7 +1,7 @@
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     // Function to toggle mobile menu
     function toggleMobileMenu() {
         const mobileMenu = document.getElementById('mobile-menu');
@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Event listener for the mobile menu button
-    document.getElementById('mobile-menu-button').addEventListener('click', function (event) {
+    document.getElementById('mobile-menu-button').addEventListener('click', (event) => {
         event.stopPropagation(); // Prevent the click event from reaching the document
         toggleMobileMenu();
     });
 
     // Close mobile menu when clicking outside
-    document.getElementById('blur-background').addEventListener('click', function (event) {
+    document.getElementById('blur-background').addEventListener('click', (event) => {
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileMenuButton = document.getElementById('mobile-menu-button');
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to toggle dropdown menu
     function toggleDropdown(dropdownId) {
-        const dropdownMenu = document.querySelector(`#${dropdownId}-menu`);
+        const dropdownMenu = document.querySelector(`#${dropdownId}`);
         dropdownMenu.classList.toggle('hidden');
     }
 
@@ -49,12 +49,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const dropdownIds = ['education', 'education-mobile', 'students', 'students-mobile', 'teachers', 'teachers-mobile', 'parents', 'parents-mobile'];
 
     // Add event listeners for the dropdown buttons dynamically
-    dropdownIds.forEach(function (dropdownId) {
+    dropdownIds.forEach(dropdownId => {
         const dropdownButton = document.getElementById(`dropdown-${dropdownId}`);
 
-        dropdownButton.addEventListener('click', function (event) {
+        dropdownButton.addEventListener('click', (event) => {
             event.stopPropagation(); // Prevent the click event from reaching the document
-            toggleDropdown(`dropdown-${dropdownId}`);
+            toggleDropdown(`dropdown-${dropdownId}-menu`);
         });
     });
 

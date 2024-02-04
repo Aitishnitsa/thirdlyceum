@@ -20,9 +20,9 @@
 <body>
     <header class="relative">
         <nav class="bg-darkBlue relative z-10">
-            <div class="relative z-20 bg-darkBlue mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative z-20 bg-darkBlue lg:mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div class="relative flex h-16 items-center justify-between">
-                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
                         <!-- Mobile menu button-->
                         <button id="mobile-menu-button"
                             class="rounded-lg md:hidden focus:outline-none focus:shadow-outline">
@@ -38,8 +38,8 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="flex flex-1 items-center justify-center sm:items-stretch">
-                        <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex flex-1 items-center justify-center lg:items-stretch">
+                        <div class="hidden lg:ml-6 lg:block">
                             <div class="flex items-center space-x-4">
                                 <a href="#"
                                     class="text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-semibold"
@@ -201,7 +201,7 @@
                         </div>
                     </div>
                     <div
-                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
                         <a href="https://www.facebook.com/groups/188966575698045/">
                             <svg fill="#FFFFFF"
                                 class="h-8 w-8 p-1 rounded-sm transition-colors ease-in-out delay-100 hover:bg-blue"
@@ -385,8 +385,8 @@
         </nav>
 
         <div class="relative isolate overflow-hidden bg-gradient-to-tr from-darkBlue to-orange py-24 sm:py-32">
-            <img src="./images/school.jpg" alt="background-image"
-                class="opacity-10 absolute inset-0 z-1 h-full w-full object-cover object-right md:object-center">
+            <img src="./images/background.jpg" alt="background-image"
+                class="opacity-25 absolute inset-0 z-1 h-full w-full object-cover object-right md:object-center">
             <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
                 aria-hidden="true">
                 <div class="aspect-[1097/845] w-[68.5625rem] bg-blue opacity-30"
@@ -437,7 +437,7 @@
                     </div>
                 </dl>
             </div>
-            <div class="absolute inset-0 transform -skew-y-2 bg-white z-0 h-20 top-[90%]"></div>
+            <div class="absolute inset-0 transform -skew-y-2 bg-white z-0 h-20 top-[90%] xl:top-[85%]"></div>
         </div>
 
         <!-- Content Section -->
@@ -531,6 +531,15 @@
                     class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     <!-- Facebook Posts... -->
                 </div>
+
+                <div id="loader" class="flex items-center justify-center p-5 min-w-screen">
+                    <div class="flex space-x-2 animate-pulse">
+                        <div class="w-3 h-3 bg-gray-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-gray-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-gray-500 rounded-full"></div>
+                    </div>
+                </div>
+
                 <div class="relative z-10 flex justify-center">
                     <button id="read-more-btn"
                         class="mt-4 px-6 py-3 border-solid border-2 border-blue bg-white text-gray-900 font-bold rounded-md transition-colors ease-in-out delay-100 hover:bg-orange hover:border-orange hover:text-white focus:outline-none">
@@ -549,7 +558,7 @@
                     class="absolute top-2/3 left-0 right-0 bottom-0 bg-gradient-to-t from-white to-transparent"></div>
             </div>
             <div class="w-full h-8">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute -bottom-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 89" class="absolute -bottom-1">
                     <defs>
                         <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                             <stop offset="0%" style="stop-color:#280274" />
@@ -558,8 +567,7 @@
                     </defs>
 
                     <path fill="url(#myGradient)" fill-opacity="1"
-                        d="M0,160L48,165.3C96,171,192,181,288,197.3C384,213,480,235,576,234.7C672,235,768,213,864,186.7C960,160,1056,128,1152,133.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                    </path>
+                        d="M0.0,89.0 L0.0,60.999 C85.797,22.512 173.277,16.933 260.0,24.0 C353.674,31.633 396.97,57.61 489.999,60.999 C612.269,66.127 660.938,32.591 779.0,26.0 C930.852,17.522 994.190,51.844 1138.999,59.999 C1239.75,65.636 1340.49,42.165 1440.0,0.0 L1440.0,89.0 " />
                 </svg>
             </div>
         </div>
@@ -660,18 +668,6 @@
 
     <!-- Footer -->
     <footer class="w-full text-lightBlue bg-darkBlue body-font relative isolate overflow-hidden">
-        <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-            aria-hidden="true">
-            <div class="aspect-[1097/845] w-[68.5625rem] bg-blue opacity-20"
-                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-            </div>
-        </div>
-        <div class="absolute -top-52 left-1/2 z-1 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-            aria-hidden="true">
-            <div class="aspect-[1097/845] w-[68.5625rem] bg-blue opacity-20"
-                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-            </div>
-        </div>
         <div
             class="container flex justify-center flex-col px-5 py-16 mx-auto max-w-7xl md:items-center lg:items-start md:flex-row md:flex-no-wrap">
             <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:mt-0 md:text-left">
