@@ -28,20 +28,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Close mobile menu when clicking outside
-    document.addEventListener('click', function (event) {
+    document.getElementById('blur-background').addEventListener('click', function (event) {
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileMenuButton = document.getElementById('mobile-menu-button');
 
         // Check if the clicked element is outside the mobile menu and button
-        if (!mobileMenu.contains(event.target) && event.target !== mobileMenuButton) {
+        if (!mobileMenu.contains(event.target) || event.target !== mobileMenuButton) {
             mobileMenu.classList.add('hidden');
             changeButtonPath(mobileMenu);
         }
     });
-});
 
-
-document.addEventListener('DOMContentLoaded', function () {
     // Function to toggle dropdown menu
     function toggleDropdown(dropdownId) {
         const dropdownMenu = document.querySelector(`#${dropdownId}-menu`);
@@ -61,11 +58,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Close dropdown menus when clicking outside
-    document.addEventListener('click', function () {
-        const dropdownMenus = document.querySelectorAll('.dropdown-menu');
-        dropdownMenus.forEach(function (menu) {
-            menu.classList.add('hidden');
-        });
-    });
 });
