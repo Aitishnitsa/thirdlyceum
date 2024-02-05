@@ -1,5 +1,4 @@
 const container = document.getElementById('container');
-const docsItems = document.querySelectorAll('.docs-items');
 const listModeBtn = document.getElementById('list-mode');
 const gridModeBtn = document.getElementById('grid-mode');
 const loader = document.getElementById('loader');
@@ -8,11 +7,10 @@ let asList = true;
 
 let list = [];
 
-// Function to create an article element
 function createItem(data) {
     return `<a href="${data.link}">
         <li
-            class="docs-items h-full col-span-1 flex border-solid border-2 border-orange hover:border-darkBlue transition-colors ease-in-out delay-75 rounded-2xl">
+            class="docs-items sm:flex-row p-1 h-full col-span-1 flex border-solid border-2 border-orange hover:border-darkBlue transition-colors ease-in-out delay-75 rounded-2xl">
             <div class="flex justify-center items-center w-6 sm:w-12">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 -256 1792 1792"
                     version="1.1">
@@ -23,8 +21,8 @@ function createItem(data) {
                     </g>
                 </svg>
             </div>
-            <div class="py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
-                <p class="font-medium text-balance">${data.name}</p>
+            <div class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                <p class="text-xs sm:text-base font-medium text-wrap">${data.name}</p>
             </div>
         </li>
     </a>`;
@@ -52,6 +50,7 @@ listModeBtn.addEventListener('click', () => {
             list.push(item);
         });
 
+        const docsItems = document.querySelectorAll('.docs-items');
         docsItems.forEach(item => {
             item.classList.remove(...['flex-col', 'items-center']);
         });
@@ -80,6 +79,7 @@ gridModeBtn.addEventListener('click', () => {
             list.push(item);
         });
 
+        const docsItems = document.querySelectorAll('.docs-items');
         docsItems.forEach(item => {
             item.classList.add(...['flex-col', 'items-center']);
         });
