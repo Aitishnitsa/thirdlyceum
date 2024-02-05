@@ -1069,24 +1069,12 @@ select {
   top: 66.666667%;
 }
 
-.top-\[85\%\] {
-  top: 85%;
-}
-
-.top-\[95\%\] {
-  top: 95%;
-}
-
 .top-\[90\%\] {
   top: 90%;
 }
 
-.bottom-1\/2 {
-  bottom: 50%;
-}
-
-.right-1\/2 {
-  right: 50%;
+.top-\[95\%\] {
+  top: 95%;
 }
 
 .isolate {
@@ -1111,6 +1099,10 @@ select {
 
 .order-first {
   order: -9999;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .col-start-2 {
@@ -1369,6 +1361,10 @@ select {
   height: 6rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1393,16 +1389,20 @@ select {
   height: 100vh;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .w-10 {
   width: 2.5rem;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-2\/3 {
   width: 66.666667%;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .w-5 {
@@ -1439,10 +1439,6 @@ select {
 
 .w-full {
   width: 100%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .max-w-2xl {
@@ -1526,16 +1522,6 @@ select {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-1\/2 {
-  --tw-translate-x: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-1\/2 {
-  --tw-translate-y: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .-skew-y-2 {
   --tw-skew-y: -2deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1561,14 +1547,14 @@ select {
   transform: none;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+@keyframes pulse {
+  50% {
+    opacity: .5;
   }
 }
 
-.animate-spin {
-  animation: spin 1s linear infinite;
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer {
@@ -2043,6 +2029,10 @@ select {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-6 {
@@ -2761,6 +2751,10 @@ select {
   padding: 1rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2951,6 +2945,10 @@ select {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -3105,10 +3103,6 @@ select {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-}
-
-.opacity-20 {
-  opacity: 0.2;
 }
 
 .opacity-25 {
@@ -3613,16 +3607,8 @@ select {
 }
 
 @media (min-width: 640px) {
-  .sm\:static {
-    position: static;
-  }
-
   .sm\:absolute {
     position: absolute;
-  }
-
-  .sm\:inset-auto {
-    inset: auto;
   }
 
   .sm\:-top-10 {
@@ -3649,10 +3635,6 @@ select {
     margin-left: 4rem;
   }
 
-  .sm\:ml-6 {
-    margin-left: 1.5rem;
-  }
-
   .sm\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -3663,10 +3645,6 @@ select {
 
   .sm\:block {
     display: block;
-  }
-
-  .sm\:hidden {
-    display: none;
   }
 
   .sm\:translate-x-0 {
@@ -3682,8 +3660,8 @@ select {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:items-stretch {
-    align-items: stretch;
+  .sm\:gap-6 {
+    gap: 1.5rem;
   }
 
   .sm\:gap-y-0 {
@@ -3698,10 +3676,6 @@ select {
   .sm\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
-
-  .sm\:pr-0 {
-    padding-right: 0px;
   }
 
   .sm\:pt-16 {
@@ -3747,28 +3721,12 @@ select {
 }
 
 @media (min-width: 768px) {
-  .md\:static {
-    position: static;
-  }
-
-  .md\:inset-auto {
-    inset: auto;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:ml-6 {
-    margin-left: 1.5rem;
-  }
-
-  .md\:block {
-    display: block;
   }
 
   .md\:hidden {
@@ -3799,17 +3757,9 @@ select {
     align-items: center;
   }
 
-  .md\:items-stretch {
-    align-items: stretch;
-  }
-
   .md\:object-center {
     -o-object-position: center;
        object-position: center;
-  }
-
-  .md\:pr-0 {
-    padding-right: 0px;
   }
 
   .md\:text-left {
@@ -3870,6 +3820,10 @@ select {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:items-start {
