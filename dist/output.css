@@ -1101,6 +1101,10 @@ select {
   top: 95%;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2640,6 +2644,18 @@ select {
 .from-lightBlue {
   --tw-gradient-from: #B5E1FF var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(181 225 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-blue {
+  --tw-gradient-from: #3652AD var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(54 82 173 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-orange {
+  --tw-gradient-from: #FE7A36 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(254 122 54 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
