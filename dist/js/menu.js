@@ -18,11 +18,12 @@ function toggleMobileMenu() {
 }
 
 function changeButtonPath(mobileMenu) {
-    closed.style.display = mobileMenu.classList.contains('hidden') ? 'block' : 'none';
-    opened.style.display = mobileMenu.classList.contains('hidden') ? 'none' : 'block';
-
-    body.classList.toggle('overflow-hidden', !mobileMenu.classList.contains('hidden'));
+    const isHidden = mobileMenu.classList.contains('hidden');
+    closed.classList.toggle('hidden', !isHidden);
+    opened.classList.toggle('hidden', isHidden);
+    body.classList.toggle('overflow-hidden', !isHidden);
 }
+
 
 // Event listener for the mobile menu button
 mobileMenuButton.addEventListener('click', (event) => {
