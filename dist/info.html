@@ -24,7 +24,7 @@
                 <div class="relative flex h-16 items-center justify-between">
                     <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
                         <!-- Mobile menu button-->
-                        <button id="mobile-menu-button"
+                        <a href="#" id="mobile-menu-button"
                             class="rounded-lg md:hidden focus:outline-none focus:shadow-outline">
                             <svg fill="#FFFFFF" viewBox="0 0 20 20" class="w-6 h-6">
                                 <path id="closed-menu" fill-rule="evenodd"
@@ -36,7 +36,7 @@
                                     clip-rule="evenodd" style="display: none;">
                                 </path>
                             </svg>
-                        </button>
+                        </a>
                     </div>
                     <div class="flex flex-1 items-center justify-center lg:items-stretch">
                         <div class="hidden lg:ml-6 lg:block">
@@ -124,9 +124,6 @@
                                                 role="menuitem" tabindex="-1">Правила для учнів</a>
                                             <a href="#"
                                                 class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Про булінг</a>
-                                            <a href="#"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
                                                 role="menuitem" tabindex="-1">Телефони довіри</a>
                                             <a href="#"
                                                 class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
@@ -196,7 +193,7 @@
                                                 role="menuitem" tabindex="-1">Правила зарахування до закладу</a>
                                             <a href="#"
                                                 class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Різне</a>
+                                                role="menuitem" tabindex="-1">Корисна інформація</a>
                                         </div>
                                     </div>
                                 </div>
@@ -231,13 +228,17 @@
                     aria-hidden="true" data-headlessui-state="open"></div>
                 <div class="fixed bg-gradient-to-tl from-darkBlue to-blue h-screen space-y-1 px-2 pb-3 pt-2">
                     <div class="relative flex flex-col">
-                        <a href="./index.html"
-                            class="text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-semibold"
-                            aria-current="page">Головна</a>
+                        <div class="flex">
+                            <a href="./index.html"
+                                class="text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-semibold"
+                                aria-current="page">Головна</a>
+                        </div>
 
-                        <a href="#"
-                            class="text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-semibold">Інформаційна
-                            прозорість</a>
+                        <div class="flex">
+                            <a href="#"
+                                class="text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-semibold">Інформаційна
+                                прозорість</a>
+                        </div>
 
                         <div>
                             <button type="button"
@@ -314,9 +315,6 @@
                                     role="menuitem" tabindex="-1">Правила для учнів</a>
                                 <a href="#"
                                     class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Про булінг</a>
-                                <a href="#"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
                                     role="menuitem" tabindex="-1">Телефони довіри</a>
                                 <a href="#"
                                     class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
@@ -381,7 +379,7 @@
                                     role="menuitem" tabindex="-1">Правила зарахування до закладу</a>
                                 <a href="#"
                                     class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Різне</a>
+                                    role="menuitem" tabindex="-1">Корисна інформація</a>
                             </div>
                         </div>
                     </div>
@@ -546,9 +544,6 @@
                             <a class="cursor-pointer">Правила для учнів</a>
                         </li>
                         <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
-                            <a class="cursor-pointer">Про булінг</a>
-                        </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
                             <a class="cursor-pointer">Телефони довіри</a>
                         </li>
                         <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
@@ -590,7 +585,7 @@
                                 закладу</a>
                         </li>
                         <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
-                            <a class="cursor-pointer">Різне</a>
+                            <a class="cursor-pointer">Корисна інформація</a>
                         </li>
                     </nav>
                 </div>
@@ -599,10 +594,10 @@
                         Контакти</h2>
                     <nav class="mb-10 list-none">
                         <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
-                            <a class="cursor-pointer">ТЕЛЕФОН ВСТАВИТИ</a>
+                            <a href="tel:+380434252215" class="cursor-pointer">+380434252215</a>
                         </li>
                         <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
-                            <a class="cursor-pointer" href="mailto: knz_3@ukr.net">knz_3@ukr.net</a>
+                            <a href="mailto:knz_3@ukr.net" class="cursor-pointer">knz_3@ukr.net</a>
                         </li>
                         <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
                             <a href="https://maps.app.goo.gl/ozc2grrXUkZBYQPh8" class="cursor-pointer">Україна,

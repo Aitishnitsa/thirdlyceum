@@ -1089,20 +1089,20 @@ select {
   right: 0px;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .top-2\/3 {
   top: 66.666667%;
 }
 
-.top-\[90\%\] {
-  top: 90%;
+.top-full {
+  top: 100%;
 }
 
-.top-\[95\%\] {
-  top: 95%;
-}
-
-.top-1\/2 {
-  top: 50%;
+.top-2 {
+  top: 0.5rem;
 }
 
 .isolate {
@@ -1221,6 +1221,14 @@ select {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.mr-12 {
+  margin-right: 3rem;
 }
 
 .mr-2 {
@@ -1381,10 +1389,6 @@ select {
   height: 4rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-24 {
   height: 6rem;
 }
@@ -1419,10 +1423,6 @@ select {
 
 .w-10 {
   width: 2.5rem;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .w-2\/3 {
@@ -1509,6 +1509,10 @@ select {
   flex-shrink: 1;
 }
 
+.shrink-0 {
+  flex-shrink: 0;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -1547,11 +1551,6 @@ select {
 
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-skew-y-2 {
-  --tw-skew-y: -2deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2059,8 +2058,8 @@ select {
   justify-items: stretch;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-6 {
@@ -2069,10 +2068,6 @@ select {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-x-1 {
@@ -2611,6 +2606,11 @@ select {
   background-color: rgb(40 2 116 / var(--tw-bg-opacity));
 }
 
+.bg-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 122 54 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
@@ -2644,12 +2644,6 @@ select {
 .from-lightBlue {
   --tw-gradient-from: #B5E1FF var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(181 225 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-blue {
-  --tw-gradient-from: #3652AD var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(54 82 173 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2799,10 +2793,6 @@ select {
   padding: 1.25rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2881,6 +2871,11 @@ select {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-8 {
@@ -3117,6 +3112,11 @@ select {
   color: rgb(181 225 255 / var(--tw-text-opacity));
 }
 
+.text-darkBlue {
+  --tw-text-opacity: 1;
+  color: rgb(40 2 116 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -3169,6 +3169,10 @@ select {
 
 .opacity-30 {
   opacity: 0.3;
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .bg-blend-normal {
@@ -3730,10 +3734,6 @@ select {
     flex-direction: row;
   }
 
-  .sm\:items-center {
-    align-items: center;
-  }
-
   .sm\:gap-6 {
     gap: 1.5rem;
   }
@@ -3742,24 +3742,24 @@ select {
     row-gap: 0px;
   }
 
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .sm\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .sm\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .sm\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .sm\:pt-16 {
@@ -3785,18 +3785,14 @@ select {
     line-height: 1;
   }
 
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 
-  .sm\:font-medium {
-    font-weight: 500;
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .sm\:leading-6 {
@@ -3930,12 +3926,6 @@ select {
 
   .lg\:pr-0 {
     padding-right: 0px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:top-\[85\%\] {
-    top: 85%;
   }
 }
 
