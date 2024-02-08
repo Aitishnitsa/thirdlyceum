@@ -28,6 +28,11 @@ function changeButtonPath(mobileMenu) {
 // Event listener for the mobile menu button
 mobileMenuButton.addEventListener('click', (event) => {
     event.stopPropagation(); // Prevent the click event from reaching the document
+    try {
+        hideBtn();
+    } catch {
+        // console.log('error caught :)');
+    }
     toggleMobileMenu();
 });
 
@@ -36,6 +41,11 @@ blurBg.addEventListener('click', (event) => {
     // Check if the clicked element is outside the mobile menu and button
     if (!mobileMenu.contains(event.target) || event.target !== mobileMenuButton) {
         mobileMenu.classList.add('hidden');
+        try {
+            hideBtn();
+        } catch {
+            // console.log('error caught :)');
+        }
         changeButtonPath(mobileMenu);
     }
 });
