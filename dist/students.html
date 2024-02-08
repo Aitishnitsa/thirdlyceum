@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Інформаційна прозорість</title>
+    <title>Учням</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -382,7 +382,7 @@
         </nav>
 
         <div class="relative isolate overflow-hidden bg-gradient-to-tr from-darkBlue to-orange py-24 sm:py-32">
-            <img src="./images/bgInfo.jpg" alt="background-image"
+            <img src="./images/bgEducation.jpg" alt="background-image"
                 class="opacity-25 absolute inset-0 z-1 h-full w-full object-cover object-right md:object-center">
             <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
                 aria-hidden="true">
@@ -398,78 +398,262 @@
             </div>
             <div class="relative z-20 flex justify-center mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-4xl lg:mx-0">
-                    <h2 class="font-bold sm:text-6xl text-3xl text-center text-white tracking-tight">Прозорість та
-                        інформаційна відкритість
-                        закладу освіти</h2>
+                    <h2 class="font-bold sm:text-6xl text-3xl text-center text-white tracking-tight">Учням
+                    </h2>
                 </div>
             </div>
         </div>
         <!-- divider -->
         <div class="w-full">
-            <svg class="absolute bottom-0" viewBox="0 0 1440 160" xmlns="http://www.w3.org/2000/svg"
+            <svg class="absolute bottom-0" viewBox="0 0 1440 82" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path fill-rule="evenodd" fill="#FFFFFF"
-                    d="M1440.0,0.0 L720.0,157.999 L0.0,0.0 L0.0,159.999 L1440.0,159.999 L1440.0,0.0 Z" />
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                    d="M1440.0,81.968 C1278.220,22.542 1117.829,-6.225 960.0,1.136 C759.764,10.476 681.42,80.639 479.999,81.968 C322.390,83.9 161.892,60.830 0.0,1.641 L0.0,81.968 L1440.0,81.968 Z" />
             </svg>
         </div>
     </header>
 
-    <main>
-        <!-- Documents List Section -->
-        <div class="mx-auto bg-white relative py-16 sm:py-32 max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto lg:mx-0 flex justify-between items-center">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Перелік
-                    документів</h2>
-                <div class="flex justify-between">
-                    <button id="list-mode"
-                        class="mr-2 border-2 border-blue hover:border-solid hover:border-orange rounded-md transition-colors ease-in-out delay-100">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" class="h-8 w-8 px-1" viewBox="0 0 52 52"
-                            data-name="Layer 1" id="Layer_1">
-                            <path
-                                d="M50,15.52H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H50a2,2,0,0,1,2,2V13.52A2,2,0,0,1,50,15.52Zm-46-4H48V4H4Z" />
-                            <path
-                                d="M50,33.76H2a2,2,0,0,1-2-2V20.24a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V31.76A2,2,0,0,1,50,33.76Zm-46-4H48V22.24H4Z" />
-                            <path
-                                d="M50,52H2a2,2,0,0,1-2-2V38.48a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V50A2,2,0,0,1,50,52ZM4,48H48V40.48H4Z" />
-                        </svg>
-                    </button>
-                    <button id="grid-mode"
-                        class="border-2 border-white hover:border-solid hover:border-orange rounded-md transition-colors ease-in-out delay-100">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" class="h-8 w-8 px-1" viewBox="0 0 52 52"
-                            data-name="Layer 1" id="Layer_1">
-                            <path
-                                d="M14,16H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2V14A2,2,0,0,1,14,16ZM4,12h8V4H4Z" />
-                            <path
-                                d="M14,34H2a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H14a2,2,0,0,1,2,2V32A2,2,0,0,1,14,34ZM4,30h8V22H4Z" />
-                            <path
-                                d="M14,52H2a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H14a2,2,0,0,1,2,2V50A2,2,0,0,1,14,52ZM4,48h8V40H4Z" />
-                            <path
-                                d="M32,16H20a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V14A2,2,0,0,1,32,16ZM22,12h8V4H22Z" />
-                            <path
-                                d="M32,34H20a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V32A2,2,0,0,1,32,34ZM22,30h8V22H22Z" />
-                            <path
-                                d="M32,52H20a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V50A2,2,0,0,1,32,52ZM22,48h8V40H22Z" />
-                            <path
-                                d="M50,16H38a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V14A2,2,0,0,1,50,16ZM40,12h8V4H40Z" />
-                            <path
-                                d="M50,34H38a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V32A2,2,0,0,1,50,34ZM40,30h8V22H40Z" />
-                            <path
-                                d="M50,52H38a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V50A2,2,0,0,1,50,52ZM40,48h8V40H40Z" />
-                        </svg>
-                    </button>
+    <main class="relative pb-24">
+        <!-- Sidebar Button -->
+        <div class="sticky top-1/2 z-20 w-0 lg:hidden">
+            <svg id="sidebar-btn" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 overflow-hidden" fill="currentColor"
+                viewBox="0 0 1024 1024" version="1.1">
+                <path id="arrow-right" class=""
+                    d="M581.5 512l-273.1-273.1c-25-25-25-65.5 0-90.5s65.5-25 90.5 0l316.7 316.7c12.9 12.9 19.2 30 18.7 47 0.4 16.9-5.8 33.9-18.699 46.8l-316.8 316.8c-25 25-65.5 25-90.5 0s-25-65.5 0-90.5l273.2-273.2z"
+                    fill="#000000" />
+                <path id="arrow-left" class="hidden" xmlns="http://www.w3.org/2000/svg"
+                    d="M442.5 512l273.1 273.1c25 25 25 65.5 0 90.5s-65.5 25-90.5 0L308.4 558.9c-12.9-12.9-19.2-30-18.7-47-0.4-16.9 5.8-33.9 18.7-46.8l316.8-316.8c25-25 65.5-25 90.5 0s25 65.5 0 90.5L442.5 512z"
+                    fill="#FFFFFF" />
+            </svg>
+        </div>
+        <div id="blur-bg-sb" class="hidden backdrop-blur-sm bg-black/20 dark:bg-slate-900/80 fixed inset-0 z-10"
+            aria-hidden="true" data-headlessui-state="open"></div>
+        <div class="relative grid grid-cols-4 mx-auto max-w-7xl px-6 lg:px-8">
+            <aside id="sidebar" class="col-span-4 lg:col-span-1 lg:relative z-10">
+                <div id="sidebar-nav"
+                    class="hidden lg:block sticky top-10 py-16 w-full mx-auto max-w-7xl bg-white rounded-2xl">
+                    <div class="mx-auto max-w-2xl lg:mx-0 p-1">
+                        <h2 class="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl px-2">Учням
+                        </h2>
+                    </div>
+                    <div class="relative right-0">
+                        <ul id="nav-list" class="relative flex flex-col list-none rounded-lg p-1" data-tabs="tabs"
+                            role="list">
+                            <li
+                                class="text-sm lg:text-base z-30 text-gray-700 block px-2 rounded-md bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100">
+                                <a href="#remote-studing"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="true" active="">Дистанційне навчання
+                                </a>
+                            </li>
+                            <li
+                                class="text-sm lg:text-base z-30 text-gray-700 block px-2 rounded-md bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100">
+                                <a href="#student-government"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Учнівське самоврядування
+                                </a>
+                            </li>
+                            <li
+                                class="text-sm lg:text-base z-30 text-gray-700 block px-2 rounded-md bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100">
+                                <a href="#rules"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Правила для учнів
+                                </a>
+                            </li>
+                            <li
+                                class="text-sm lg:text-base z-30 text-gray-700 block px-2 rounded-md bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100">
+                                <a href="#trust-phones"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Телефони довіри
+                                </a>
+                            </li>
+                            <li
+                                class="text-sm lg:text-base z-30 text-gray-700 block px-2 rounded-md bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100">
+                                <a href="#exams"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">ЗНО / НМТ
+                                </a>
+                            </li>
+                            <li
+                                class="text-sm lg:text-base z-30 text-gray-700 block px-2 rounded-md bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100">
+                                <a href="#actions"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Дії в разі надзвичайних
+                                    ситуацій
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <ul id="container"
-                class="grid gap-2 sm:gap-6 grid-cols-1 mx-auto mt-4 pt-10 border-t border-blue sm:pt-16 lg:mx-0">
-                <!-- Documents -->
-            </ul>
+            </aside>
 
-            <div id="loader" class="flex items-center justify-center p-5 min-w-screen">
-                <div class="flex space-x-2 animate-pulse">
-                    <div class="w-3 h-3 bg-gray-500 rounded-full"></div>
-                    <div class="w-3 h-3 bg-gray-500 rounded-full"></div>
-                    <div class="w-3 h-3 bg-gray-500 rounded-full"></div>
-                </div>
+            <div class="col-span-4 lg:col-span-3">
+                <!-- Дистанційне навчання Section -->
+                <section id="remote-studing" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Дистанційне навчання
+                            </h2>
+                        </div>
+                        <div
+                            class="mx-auto mt-4 max-w-2xl border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                            <!-- Content -->
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing
+                                Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of
+                                Lorem
+                                Ipsum.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Учнівське самоврядування Section -->
+                <section id="student-government" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Учнівське
+                                самоврядування
+                            </h2>
+                        </div>
+                        <div
+                            class="mx-auto mt-4 max-w-2xl border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                            <!-- Content -->
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing
+                                Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of
+                                Lorem
+                                Ipsum.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Правила для учнів Section -->
+                <section id="rules" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Правила для учнів
+                            </h2>
+                        </div>
+                        <div
+                            class="mx-auto mt-4 max-w-2xl border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                            <!-- Content -->
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing
+                                Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of
+                                Lorem
+                                Ipsum.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Телефони довіри Section -->
+                <section id="trust-phones" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Телефони довіри
+                            </h2>
+                        </div>
+                        <div
+                            class="mx-auto mt-4 max-w-2xl border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                            <!-- Content -->
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing
+                                Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of
+                                Lorem
+                                Ipsum.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- ЗНО / НМТ Section -->
+                <section id="exams" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                                ЗНО / НМТ
+                            </h2>
+                        </div>
+                        <div
+                            class="mx-auto mt-4 max-w-2xl border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                            <!-- Content -->
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing
+                                Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of
+                                Lorem
+                                Ipsum.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Дії в разі надзвичайних ситуацій Section -->
+                <section id="actions" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Дії в разі
+                                надзвичайних
+                                ситуацій
+                            </h2>
+                        </div>
+                        <div
+                            class="mx-auto mt-4 max-w-2xl border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                            <!-- Content -->
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing
+                                Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of
+                                Lorem
+                                Ipsum.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
@@ -607,7 +791,7 @@
     </footer>
 
     <script src="./js/menu.js"></script>
-    <script src="./js/docsEmbed.js"></script>
+    <script src="./js/sidebarNav.js"></script>
 </body>
 
 </html>

@@ -50,12 +50,10 @@ blurBg.addEventListener('click', (event) => {
     }
 });
 
-body.addEventListener('click', (event) => {
-    // Check if the clicked element is outside the mobile menu and button
+body.addEventListener('click', () => {
+    // Check if the clicked element is outside the dropdown
     dropdownMenuGroup.forEach(item => {
-        if (!item.contains(event.target)) {
-            item.classList.add('hidden');
-        }
+        item.classList.add('hidden');
     });
 });
 
