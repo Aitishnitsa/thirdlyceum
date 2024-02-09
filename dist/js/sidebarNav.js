@@ -5,6 +5,7 @@ const bg = document.getElementById('blur-bg-sb');
 const navList = document.getElementById('nav-list');
 const arrowLeft = document.getElementById('arrow-left');
 const arrowRight = document.getElementById('arrow-right');
+const goTop = document.getElementById('go-top');
 
 function hideBtn() {
     btn.classList.toggle('hidden');
@@ -36,6 +37,14 @@ function outsideBtnClick() {
     }
 }
 
+function toggleGoTopButton() {
+    if (window.scrollY > 200) {
+        goTop.classList.remove('hidden');
+    } else {
+        goTop.classList.add('hidden');
+    }
+}
+
 btn.addEventListener('click', (event) => {
     event.stopPropagation();
     toggleSidebarNav();
@@ -50,3 +59,5 @@ bg.addEventListener('click', (event) => {
     event.stopPropagation();
     outsideBtnClick();
 });
+
+window.addEventListener('scroll', toggleGoTopButton);
