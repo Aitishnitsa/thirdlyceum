@@ -12,24 +12,34 @@ const body = document.body;
 
 
 // Function to toggle mobile menu
-function toggleMobileMenu() {
+const toggleMobileMenu = () => {
     mobileMenu.classList.toggle('hidden');
     changeButtonPath(mobileMenu);
 }
 
-function changeButtonPath(mobileMenu) {
+const changeButtonPath = (mobileMenu) => {
     const isHidden = mobileMenu.classList.contains('hidden');
     closed.classList.toggle('hidden', !isHidden);
     opened.classList.toggle('hidden', isHidden);
     body.classList.toggle('overflow-hidden', !isHidden);
 }
 
+// Function to toggle dropdown menu
+const toggleDropdown = (dropdownId) => {
+    const dropdownMenu = document.getElementById(`${dropdownId}`);
+    dropdownMenuGroup.forEach(item => {
+        if (!item.classList.contains('hidden') && item != dropdownMenu) {
+            item.classList.add('hidden');
+        }
+    });
+    dropdownMenu.classList.toggle('hidden');
+}
 
 // Event listener for the mobile menu button
 mobileMenuButton.addEventListener('click', (event) => {
     event.stopPropagation(); // Prevent the click event from reaching the document
     try {
-        hideBtn();
+        hideSidebarButton();
     } catch {
         // console.log('error caught :)');
     }
@@ -42,7 +52,7 @@ blurBg.addEventListener('click', (event) => {
     if (!mobileMenu.contains(event.target) || event.target !== mobileMenuButton) {
         mobileMenu.classList.add('hidden');
         try {
-            hideBtn();
+            hideSidebarButton();
         } catch {
             // console.log('error caught :)');
         }
@@ -56,17 +66,6 @@ body.addEventListener('click', () => {
         item.classList.add('hidden');
     });
 });
-
-// Function to toggle dropdown menu
-function toggleDropdown(dropdownId) {
-    const dropdownMenu = document.getElementById(`${dropdownId}`);
-    dropdownMenuGroup.forEach(item => {
-        if (!item.classList.contains('hidden') && item != dropdownMenu) {
-            item.classList.add('hidden');
-        }
-    });
-    dropdownMenu.classList.toggle('hidden');
-}
 
 dropdownIds.forEach(dropdownId => {
     const dropdownButton = document.getElementById(`dropdown-${dropdownId}`);

@@ -7,7 +7,7 @@ let asList = true;
 
 let list = [];
 
-function createItem(data) {
+const createItem = (data) => {
     return `<a href="${data.link}">
         <li
             class="docs-items sm:flex-row p-1 h-full col-span-1 flex border-solid border-2 border-orange hover:border-darkBlue transition-colors ease-in-out delay-75 rounded-2xl">
@@ -28,22 +28,18 @@ function createItem(data) {
     </a>`;
 }
 
-listModeBtn.addEventListener('click', () => {
-    if (!asList) {
-        asList = true;
+const toggleMode = (isList) => {
+    if (isList !== asList) {
+        asList = isList;
 
-        listModeBtn.classList.remove('border-white');
-        listModeBtn.classList.add('border-blue');
+        listModeBtn.classList.toggle('border-blue', isList);
+        listModeBtn.classList.toggle('border-white', !isList);
+        gridModeBtn.classList.toggle('border-blue', !isList);
+        gridModeBtn.classList.toggle('border-white', isList);
 
-        gridModeBtn.classList.remove('border-blue');
-        if (!gridModeBtn.classList.contains('border-white')) {
-            gridModeBtn.classList.add('border-white');
-        }
-
-        if (container.classList.contains('grid-cols-2')) {
-            container.classList.remove(...['sm:grid-cols-3', 'grid-cols-2']);
-            container.classList.add('grid-cols-1');
-        }
+        const containerClasses = isList ? ['grid-cols-1'] : ['sm:grid-cols-3', 'grid-cols-2'];
+        container.classList.remove('grid-cols-1', 'grid-cols-2', 'sm:grid-cols-3');
+        container.classList.add(...containerClasses);
 
         list.forEach(item => {
             list.pop(item);
@@ -52,39 +48,17 @@ listModeBtn.addEventListener('click', () => {
 
         const docsItems = document.querySelectorAll('.docs-items');
         docsItems.forEach(item => {
-            item.classList.remove(...['flex-col', 'items-center']);
+            if (isList) {
+                item.classList.remove('flex-col', 'items-center');
+            } else {
+                item.classList.add('flex-col', 'items-center');
+            }
         });
     }
-});
+}
 
-gridModeBtn.addEventListener('click', () => {
-    if (asList) {
-        asList = false;
-
-        gridModeBtn.classList.remove('border-white');
-        gridModeBtn.classList.add('border-blue');
-
-        listModeBtn.classList.remove('border-blue');
-        if (!listModeBtn.classList.contains('border-white')) {
-            listModeBtn.classList.add('border-white');
-        }
-
-        if (!container.classList.contains('grid-cols-2')) {
-            container.classList.remove('grid-cols-1');
-            container.classList.add(...['sm:grid-cols-3', 'grid-cols-2']);
-        }
-
-        list.forEach(item => {
-            list.pop(item);
-            list.push(item);
-        });
-
-        const docsItems = document.querySelectorAll('.docs-items');
-        docsItems.forEach(item => {
-            item.classList.add(...['flex-col', 'items-center']);
-        });
-    }
-});
+listModeBtn.addEventListener('click', () => toggleMode(true));
+gridModeBtn.addEventListener('click', () => toggleMode(false));
 
 fetch('./docs.json')
     .then(response => {

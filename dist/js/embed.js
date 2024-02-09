@@ -7,7 +7,7 @@ const loader = document.getElementById('loader');
 let newsArray = [];
 
 // Function to create an article element
-function createArticle(data) {
+const createArticle = (data) => {
     const article = document.createElement('article');
     article.className = 'bg-white border-solid border-2 border-orange hover:border-darkBlue transition-colors ease-in-out delay-75 rounded-2xl p-4 flex max-w-xl flex-col items-start justify-between';
 
@@ -58,7 +58,7 @@ function createArticle(data) {
 }
 
 // Function to render all articles on the page
-function renderAllArticles(dataArray) {
+const renderAllArticles = (dataArray) => {
     dataArray.forEach(data => {
         const article = createArticle(data);
         articlesContainer.appendChild(article);
@@ -66,7 +66,7 @@ function renderAllArticles(dataArray) {
 }
 
 // Function to handle "Read More" button click
-function handleReadMoreClick() {
+const handleReadMoreClick = () => {
     // Show the remaining articles
     articlesContainer.querySelectorAll('article').forEach(article => {
         article.classList.remove('hidden');
@@ -81,7 +81,7 @@ function handleReadMoreClick() {
 }
 
 // Function to handle "Show Less" button click
-function handleShowLessClick() {
+const handleShowLessClick = () => {
     // Hide the remaining articles
     articlesContainer.querySelectorAll('article').forEach((article, index) => {
         if (index >= 6) {

@@ -7,12 +7,15 @@ const arrowLeft = document.getElementById('arrow-left');
 const arrowRight = document.getElementById('arrow-right');
 const goTop = document.getElementById('go-top');
 
-function hideBtn() {
-    btn.classList.toggle('hidden');
-}
 
-function toggleSidebarNav() {
+const hideSidebarButton = () => { btn.classList.toggle('hidden'); }
+
+const toggleSidebarNav = () => {
     let isHidden = nav.classList.contains('hidden');
+
+    const sidebarHiddenClasses = ['fixed', 'flex', 'h-screen', 'items-center', 'px-6', 'top-0'];
+    const navHiddenClasses = ['shadow-2xl', 'shadow-gray-500'];
+    const btnHiddenClasses = ['bg-blue', 'rounded-2xl'];
 
     nav.classList.toggle('hidden', !isHidden);
     bg.classList.toggle('hidden', !isHidden);
@@ -20,30 +23,24 @@ function toggleSidebarNav() {
     arrowRight.classList.toggle('hidden');
     body.classList.toggle('overflow-hidden');
 
-    if (isHidden) {
-        sidebar.classList.add('fixed', 'flex', 'h-screen', 'items-center', 'px-6', 'top-0');
-        nav.classList.add('shadow-2xl', 'shadow-gray-500');
-        btn.classList.add('bg-blue', 'h-8', 'overflow-hidden', 'rounded-2xl', 'w-8');
-    } else {
-        sidebar.classList.remove('fixed', 'flex', 'h-screen', 'items-center', 'px-6', 'top-0');
-        nav.classList.remove('shadow-2xl', 'shadow-gray-500');
-        btn.classList.remove('bg-blue', 'rounded-2xl');
-    }
+    toggleSidebarClasses(isHidden, sidebar, sidebarHiddenClasses);
+    toggleSidebarClasses(isHidden, nav, navHiddenClasses);
+    toggleSidebarClasses(isHidden, btn, btnHiddenClasses);
 }
 
-function outsideBtnClick() {
+const toggleSidebarClasses = (isHidden, container, classes) => {
+    isHidden ? container.classList.add(...classes) : container.classList.remove(...classes);
+}
+
+const outsideBtnClick = () => {
     if (!nav.classList.contains('hidden')) {
         toggleSidebarNav();
     }
 }
 
-function toggleGoTopButton() {
-    if (window.scrollY > 200) {
-        goTop.classList.remove('hidden');
-    } else {
-        goTop.classList.add('hidden');
-    }
-}
+const toggleGoTopButton = () => {
+    window.scrollY > 200 ? goTop.classList.remove('hidden') : goTop.classList.add('hidden');
+};
 
 btn.addEventListener('click', (event) => {
     event.stopPropagation();

@@ -4,22 +4,7 @@
 
 const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    emailjs.sendForm('service_b9xzgou', 'template_60himxb', form)
-        .then(() => {
-            console.log('SUCCESS!');
-            showAlert('Success', 'Повідомлення надіслано успішно');
-        }, (error) => {
-            console.log('FAILED...', error);
-            showAlert('Failed', 'Виникла помилка при відправленні повідомлення. Спробуйте пізніше');
-        });
-
-    document.getElementById('contact-form').reset();
-});
-
-function showAlert(title, message) {
+const showAlert = (title, message) => {
     const alertContainer = document.getElementById('alert-container');
     alertContainer.innerHTML = `
         <div data-dismissible="alert" role="alert"
@@ -40,3 +25,18 @@ function showAlert(title, message) {
         alertContainer.innerHTML = '';
     }, 5000); // ms
 }
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    emailjs.sendForm('service_b9xzgou', 'template_60himxb', form)
+        .then(() => {
+            console.log('SUCCESS!');
+            showAlert('Success', 'Повідомлення надіслано успішно');
+        }, (error) => {
+            console.log('FAILED...', error);
+            showAlert('Failed', 'Виникла помилка при відправленні повідомлення. Спробуйте пізніше');
+        });
+
+    document.getElementById('contact-form').reset();
+});
