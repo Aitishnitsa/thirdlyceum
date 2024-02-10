@@ -8,7 +8,7 @@ const showAlert = (title, message) => {
     const alertContainer = document.getElementById('alert-container');
     alertContainer.innerHTML = `
         <div data-dismissible="alert" role="alert"
-                    class="font-semibold relative flex rounded-lg bg-orange px-4 py-4 text-base text-darkBlue">
+                    class="animate-ping animate-once animate-reverse font-semibold relative flex rounded-lg bg-orange px-4 py-4 text-base text-darkBlue">
                     <div class="shrink-0">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="w-6 h-6">

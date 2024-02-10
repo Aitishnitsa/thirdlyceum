@@ -10,7 +10,6 @@ const mobileMenuButton = document.getElementById('mobile-menu-button');
 const blurBg = document.getElementById('blur-background');
 const body = document.body;
 
-
 // Function to toggle mobile menu
 const toggleMobileMenu = () => {
     mobileMenu.classList.toggle('hidden');
@@ -67,6 +66,10 @@ body.addEventListener('click', () => {
     });
 });
 
+mobileMenu.addEventListener('click', () => {
+    toggleMobileMenu();
+});
+
 dropdownIds.forEach(dropdownId => {
     const dropdownButton = document.getElementById(`dropdown-${dropdownId}`);
     dropdownButton.addEventListener('click', (event) => {
@@ -74,3 +77,34 @@ dropdownIds.forEach(dropdownId => {
         toggleDropdown(`dropdown-${dropdownId}-menu`);
     });
 });
+
+const addAnimation = (id, animation) => {
+    const element = document.getElementById(id);
+    element.classList.remove('opacity-0');
+
+    // Створюємо Intersection Observer для кожного блоку
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Якщо блок прокручується, додаємо анімаційні класи
+                element.classList.add(...animation);
+            } else {
+                // Якщо блок більше не прокручується, видаляємо анімаційні класи
+                // element.classList.remove(...animation);
+            }
+        });
+    });
+
+    // Починаємо відстеження блоку
+    observer.observe(element);
+};
+
+// Додаємо анімацію тільки для прокручуваних блоків
+try {
+    addAnimation('history', ['animate-fade-down', 'animate-once', 'animate-ease-in']);
+    addAnimation('articles-container', ['animate-fade-down', 'animate-once', 'animate-ease-in']);
+    addAnimation('contacts-section', ['animate-fade-right', 'animate-once', 'animate-duration-1000', 'animate-ease-in-out']);
+    addAnimation('email-section', ['animate-fade-left', 'animate-once', 'animate-duration-1000', 'animate-ease-in-out']);
+} catch {
+    console.log('animated block is absent');
+}

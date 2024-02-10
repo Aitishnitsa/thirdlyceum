@@ -10,7 +10,7 @@ let list = [];
 const createItem = (data) => {
     return `<a href="${data.link}">
         <li
-            class="docs-items sm:flex-row p-1 h-full col-span-1 flex border-solid border-2 border-orange hover:border-darkBlue transition-colors ease-in-out delay-75 rounded-2xl">
+            class="docs-items hover:translate-x-1 transition sm:flex-row p-1 h-full col-span-1 flex border-solid border-2 border-orange hover:border-darkBlue ease-in-out delay-75 rounded-2xl">
             <div class="flex justify-center items-center w-6 sm:w-12">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 -256 1792 1792"
                     version="1.1">

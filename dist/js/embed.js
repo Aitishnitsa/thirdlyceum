@@ -9,7 +9,7 @@ let newsArray = [];
 // Function to create an article element
 const createArticle = (data) => {
     const article = document.createElement('article');
-    article.className = 'bg-white border-solid border-2 border-orange hover:border-darkBlue transition-colors ease-in-out delay-75 rounded-2xl p-4 flex max-w-xl flex-col items-start justify-between';
+    article.className = 'bg-white border-solid border-2 border-orange hover:border-darkBlue hover:-rotate-2 transition ease-in-out delay-75 rounded-2xl p-4 flex max-w-xl flex-col items-start justify-between';
 
     // Create elements for the article content
     const dateElement = document.createElement('time');
