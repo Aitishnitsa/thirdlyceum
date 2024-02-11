@@ -55,7 +55,7 @@ blurBg.addEventListener('click', (event) => {
         } catch {
             // console.log('error caught :)');
         }
-        changeButtonPath(mobileMenu);
+        toggleMobileMenu();
     }
 });
 
