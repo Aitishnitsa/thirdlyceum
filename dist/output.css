@@ -1141,6 +1141,10 @@ select {
   grid-column: span 4 / span 4;
 }
 
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -1215,6 +1219,10 @@ select {
   margin-bottom: 2.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -1229,6 +1237,10 @@ select {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .mr-12 {
@@ -1429,6 +1441,14 @@ select {
   height: 100vh;
 }
 
+.max-h-\[10rem\] {
+  max-height: 10rem;
+}
+
+.max-h-\[14rem\] {
+  max-height: 14rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1555,6 +1575,12 @@ select {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.border-spacing-2 {
+  --tw-border-spacing-x: 0.5rem;
+  --tw-border-spacing-y: 0.5rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
 .origin-top-right {
@@ -1696,6 +1722,17 @@ select {
   animation: flip-up 1s both;
 }
 
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
 @keyframes pulse {
   50% {
     opacity: .5;
@@ -1726,17 +1763,6 @@ select {
 
 .animate-shake {
   animation: shake .5s both;
-}
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-pointer {
@@ -1886,6 +1912,10 @@ select {
   list-style-position: outside;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -2031,6 +2061,10 @@ select {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2604,6 +2638,10 @@ select {
   border-radius: 0.125rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2942,6 +2980,10 @@ select {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -3838,11 +3880,6 @@ select {
   }
 }
 
-.hover\:translate-x-2:hover {
-  --tw-translate-x: 0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:translate-x-1:hover {
   --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3894,6 +3931,11 @@ select {
 .hover\:text-lightBlue:hover {
   --tw-text-opacity: 1;
   color: rgb(181 225 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-orange:hover {
+  --tw-text-opacity: 1;
+  color: rgb(254 122 54 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
@@ -4009,6 +4051,10 @@ select {
     grid-column: span 2 / span 2;
   }
 
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .sm\:ml-16 {
     margin-left: 4rem;
   }
@@ -4060,6 +4106,10 @@ select {
 
   .sm\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .sm\:p-4 {
+    padding: 1rem;
   }
 
   .sm\:px-4 {
@@ -4117,6 +4167,11 @@ select {
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-sm {
