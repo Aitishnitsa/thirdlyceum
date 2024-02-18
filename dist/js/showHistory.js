@@ -8,7 +8,7 @@ const toggleHistory = () => {
         item.classList.toggle('hidden');
         item.classList.add('animate-fade-down', 'animate-duration-500');
     });
-    historyImg.classList.add('animate-shake', 'animate-duration-700', 'animate-ease-out');
+    historyImg.classList.add('animate-rotate-x', 'animate-duration-700', 'animate-ease-out');
     readMoreBtn.classList.toggle('hidden');
     hideBtn.classList.toggle('hidden');
 };

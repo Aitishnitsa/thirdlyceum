@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .nav-btn {
+        @apply flex text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-base sm:text-sm font-semibold;
+    }
+
+    .secondary-btn {
+        @apply px-6 py-3 border-solid border-2 border-blue bg-white font-bold rounded-md transition-colors ease-in-out delay-100 hover:bg-orange hover:border-orange hover:text-white focus:outline-none;
+    }
+
+    .docs-item {
+        @apply hover:translate-x-1 transition sm:flex-row p-1 h-full col-span-1 flex border-solid border-2 border-orange hover:border-darkBlue ease-in-out delay-75 rounded-2xl;
+    }
+
+    .dropdown-menu {
+        @apply z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg focus:outline-none;
+    }
+
+    .nav-item {
+        @apply text-sm z-30 block rounded-md bg-white border-2 border-white hover:border-solid hover:border-orange transition-colors ease-in-out delay-100;
+    }
+
+    .article-title {
+        @apply text-3xl font-bold tracking-tight sm:text-4xl;
+    }
+
+    .article-content {
+        @apply mx-auto mt-4 max-w-2xl border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3;
+    }
+
+    .main-title {
+        @apply animate-flip-down animate-once animate-duration-1000 font-bold sm:text-6xl text-3xl text-center text-white tracking-tight;
+    }
+
+    .footer-list {
+        @apply w-full px-4 lg:w-1/6 md:w-1/2;
+    }
+
+    .footer-list-item {
+        @apply mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100;
+    }
+}

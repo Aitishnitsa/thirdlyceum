@@ -41,64 +41,54 @@
                     <div class="flex flex-1 items-center justify-center lg:items-stretch">
                         <div class="hidden lg:ml-6 lg:block">
                             <div class="flex items-center space-x-4">
-                                <a href="./index.html"
-                                    class="text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-semibold"
-                                    aria-current="page">Головна</a>
-                                <a href="./info.html"
-                                    class="text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-semibold">Інформаційна
+                                <a href="./index.html" class="nav-btn" aria-current="page">Головна</a>
+                                <a href="./info.html" class="nav-btn">Інформаційна
                                     прозорість</a>
                                 <div class="relative inline-block text-left">
-                                    <div>
-                                        <button type="button"
-                                            class="flex text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-semibold"
-                                            id="dropdown-education" aria-expanded="true" aria-haspopup="true">
-                                            Освітній процес
-                                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
-                                                aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                        </button>
-                                    </div>
+                                    <button type="button" class="nav-btn" id="dropdown-education" aria-expanded="true"
+                                        aria-haspopup="true">
+                                        Освітній процес
+                                        <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
 
-                                    <div class="dropdown-menu animate-duration-1000 animate-flip-down animate-once hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                        id="dropdown-education-menu" role="menu" aria-orientation="vertical"
-                                        aria-labelledby="menu-button" tabindex="-1">
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-education-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
                                         <div class="py-1" role="none">
                                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                            <a href="./education.html"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Виховна робота</a>
+                                            <a href="./education.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Виховна
+                                                робота</a>
                                             <a href="./education.html#methodological-work"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Методична робота</a>
-                                            <a href="./education.html#textbooks-choice"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem" tabindex="-1">Методична
+                                                робота</a>
+                                            <a href="./education.html#textbooks-choice" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">Вибір підручників</a>
-                                            <a href="./education.html#nush"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                            <a href="./education.html#nush" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">НУШ</a>
                                             <a href="./education.html#psychosocial-service"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Соціально-психологічна служба</a>
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Соціально-психологічна служба</a>
                                             <a href="./education.html#enrollment-expulsion"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Зарахування та відрахування учнів</a>
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Зарахування та відрахування учнів</a>
                                             <a href="./education.html#education-quality-service"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Державна служба якості освіти</a>
-                                            <a href="./education.html#talented-children"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem" tabindex="-1">Державна
+                                                служба якості освіти</a>
+                                            <a href="./education.html#talented-children" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">Робота з обдарованими дітьми</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="relative inline-block text-left">
                                     <div>
-                                        <button type="button"
-                                            class="flex text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-semibold"
-                                            id="dropdown-students" aria-expanded="true" aria-haspopup="true">
+                                        <button type="button" class="nav-btn" id="dropdown-students"
+                                            aria-expanded="true" aria-haspopup="true">
                                             Учням
                                             <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
                                                 aria-hidden="true">
@@ -108,88 +98,73 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="dropdown-menu animate-duration-1000 animate-flip-down animate-once hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                        id="dropdown-students-menu" role="menu" aria-orientation="vertical"
-                                        aria-labelledby="menu-button" tabindex="-1">
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-students-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
                                         <div class="py-1" role="none">
                                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                            <a href="./students.html"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Дистанційне навчання</a>
-                                            <a href="./students.html#student-government"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                            <a href="./students.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Дистанційне навчання</a>
+                                            <a href="./students.html#student-government" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">Учнівське самоврядування</a>
-                                            <a href="./students.html#rules"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                            <a href="./students.html#rules" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">Правила для учнів</a>
-                                            <a href="./students.html#trust-phones"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                            <a href="./students.html#trust-phones" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">Телефони довіри</a>
-                                            <a href="./students.html#exams"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                            <a href="./students.html#exams" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">ЗНО / НМТ</a>
-                                            <a href="./students.html#actions"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                            <a href="./students.html#actions" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">Дії в разі надзвичайних ситуацій</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="relative inline-block text-left">
-                                    <div>
-                                        <button type="button"
-                                            class="flex text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-semibold"
-                                            id="dropdown-teachers" aria-expanded="true" aria-haspopup="true">
-                                            Учителям
-                                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
-                                                aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                    <div class="dropdown-menu animate-duration-1000 animate-flip-down animate-once hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                        id="dropdown-teachers-menu" role="menu" aria-orientation="vertical"
-                                        aria-labelledby="menu-button" tabindex="-1">
+                                    <button type="button" class="nav-btn" id="dropdown-teachers" aria-expanded="true"
+                                        aria-haspopup="true">
+                                        Учителям
+                                        <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-teachers-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
                                         <div class="py-1" role="none">
                                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                            <a href="./teachers.html"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Атестація</a>
+                                            <a href="./teachers.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Атестація</a>
                                             <a href="./teachers.html#professional-development"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Підвищення кваліфікації педагогів</a>
-                                            <a href="./teachers.html#resources"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem" tabindex="-1">Підвищення
+                                                кваліфікації педагогів</a>
+                                            <a href="./teachers.html#resources" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">Освітні ресурси</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="relative inline-block text-left">
-                                    <div>
-                                        <button type="button"
-                                            class="flex text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-sm font-semibold"
-                                            id="dropdown-parents" aria-expanded="true" aria-haspopup="true">
-                                            Батькам
-                                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
-                                                aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                        </button>
-                                    </div>
+                                    <button type="button" class="nav-btn" id="dropdown-parents" aria-expanded="true"
+                                        aria-haspopup="true">
+                                        Батькам
+                                        <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
 
-                                    <div class="dropdown-menu animate-duration-1000 animate-flip-down animate-once hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                        id="dropdown-parents-menu" role="menu" aria-orientation="vertical"
-                                        aria-labelledby="menu-button" tabindex="-1">
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-parents-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
                                         <div class="py-1" role="none">
                                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                            <a href="./parents.html"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                                role="menuitem" tabindex="-1">Правила зарахування до закладу</a>
-                                            <a href="./parents.html#useful-info"
-                                                class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                            <a href="./parents.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Правила
+                                                зарахування до закладу</a>
+                                            <a href="./parents.html#useful-info" class="nav-item px-4 py-2 mx-1"
                                                 role="menuitem" tabindex="-1">Корисна інформація</a>
                                         </div>
                                     </div>
@@ -224,157 +199,124 @@
                 <div id="blur-background" class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
                     aria-hidden="true" data-headlessui-state="open"></div>
                 <div
-                    class="animate-duration-1000 animate-flip-down animate-once fixed bg-gradient-to-tl from-darkBlue to-blue h-screen space-y-1 px-2 pb-3 pt-2">
+                    class="animate-duration-500 animate-fade-right animate-once fixed bg-gradient-to-tl from-darkBlue to-blue h-screen space-y-1 px-2 pb-3 pt-2">
                     <div class="relative flex flex-col">
                         <div class="flex">
-                            <a href="./index.html"
-                                class="text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-semibold"
-                                aria-current="page">Головна</a>
+                            <a href="./index.html" class="nav-btn" aria-current="page">Головна</a>
                         </div>
 
                         <div class="flex">
-                            <a href="./info.html"
-                                class="text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue block rounded-md px-3 py-2 text-base font-semibold">Інформаційна
+                            <a href="./info.html" class="nav-btn">Інформаційна
                                 прозорість</a>
                         </div>
 
-                        <div>
-                            <button type="button"
-                                class="flex items-center text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-base font-semibold"
-                                id="dropdown-education-mobile" aria-expanded="true" aria-haspopup="true">
-                                Освітній процес
-                                <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="dropdown-menu animate-duration-1000 animate-flip-down animate-once hidden relative z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                            id="dropdown-education-mobile-menu" role="menu" aria-orientation="vertical"
-                            aria-labelledby="menu-button" tabindex="-1">
+                        <button type="button" class="nav-btn" id="dropdown-education-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Освітній процес
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-education-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1" role="none">
                                 <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                <a href="./education.html"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Виховна робота</a>
-                                <a href="./education.html#methodological-work"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                <a href="./education.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Виховна
+                                    робота</a>
+                                <a href="./education.html#methodological-work" class="nav-item px-4 py-2 mx-1"
                                     role="menuitem" tabindex="-1">Методична робота</a>
-                                <a href="./education.html#textbooks-choice"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                <a href="./education.html#textbooks-choice" class="nav-item px-4 py-2 mx-1"
                                     role="menuitem" tabindex="-1">Вибір підручників</a>
-                                <a href="./education.html#nush"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">НУШ</a>
-                                <a href="./education.html#psychosocial-service"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                <a href="./education.html#nush" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">НУШ</a>
+                                <a href="./education.html#psychosocial-service" class="nav-item px-4 py-2 mx-1"
                                     role="menuitem" tabindex="-1">Соціально-психологічна служба</a>
-                                <a href="./education.html#enrollment-expulsion"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                <a href="./education.html#enrollment-expulsion" class="nav-item px-4 py-2 mx-1"
                                     role="menuitem" tabindex="-1">Зарахування та
                                     відрахування учнів</a>
-                                <a href="./education.html#education-quality-service"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                <a href="./education.html#education-quality-service" class="nav-item px-4 py-2 mx-1"
                                     role="menuitem" tabindex="-1">Державна служба
                                     якості освіти</a>
-                                <a href="./education.html#talented-children"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                <a href="./education.html#talented-children" class="nav-item px-4 py-2 mx-1"
                                     role="menuitem" tabindex="-1">Робота з
                                     обдарованими дітьми</a>
                             </div>
                         </div>
 
-                        <div>
-                            <button type="button"
-                                class="flex items-center text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-base font-semibold"
-                                id="dropdown-students-mobile" aria-expanded="true" aria-haspopup="true">
-                                Учням
-                                <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="dropdown-menu animate-duration-1000 animate-flip-down animate-once hidden relative z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                            id="dropdown-students-mobile-menu" role="menu" aria-orientation="vertical"
-                            aria-labelledby="menu-button" tabindex="-1">
+                        <button type="button" class="nav-btn" id="dropdown-students-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Учням
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-students-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1" role="none">
                                 <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                <a href="./students.html"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Дистанційне навчання</a>
-                                <a href="./students.html#student-government"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                <a href="./students.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Дистанційне
+                                    навчання</a>
+                                <a href="./students.html#student-government" class="nav-item px-4 py-2 mx-1"
                                     role="menuitem" tabindex="-1">Учнівське самоврядування</a>
-                                <a href="./students.html#rules"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Правила для учнів</a>
-                                <a href="./students.html#trust-phones"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Телефони довіри</a>
-                                <a href="./students.html#exams"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">ЗНО / НМТ</a>
-                                <a href="./students.html#actions"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Дії в разі надзвичайних ситуацій</a>
+                                <a href="./students.html#rules" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Правила для учнів</a>
+                                <a href="./students.html#trust-phones" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Телефони довіри</a>
+                                <a href="./students.html#exams" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">ЗНО /
+                                    НМТ</a>
+                                <a href="./students.html#actions" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Дії
+                                    в разі надзвичайних ситуацій</a>
                             </div>
                         </div>
 
-                        <div>
-                            <button type="button"
-                                class="flex items-center text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-base font-semibold"
-                                id="dropdown-teachers-mobile" aria-expanded="true" aria-haspopup="true">
-                                Учителям
-                                <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="dropdown-menu animate-duration-1000 animate-flip-down animate-once hidden relative z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                            id="dropdown-teachers-mobile-menu" role="menu" aria-orientation="vertical"
-                            aria-labelledby="menu-button" tabindex="-1">
+                        <button type="button" class="nav-btn" id="dropdown-teachers-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Учителям
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-teachers-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1" role="none">
                                 <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                <a href="./teachers.html"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Атестація</a>
-                                <a href="./teachers.html#professional-development"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
+                                <a href="./teachers.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Атестація</a>
+                                <a href="./teachers.html#professional-development" class="nav-item px-4 py-2 mx-1"
                                     role="menuitem" tabindex="-1">Підвищення кваліфікації педагогів</a>
-                                <a href="./teachers.html#resources"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Освітні ресурси</a>
+                                <a href="./teachers.html#resources" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Освітні ресурси</a>
                             </div>
                         </div>
 
-                        <div>
-                            <button type="button"
-                                class="flex items-center text-white transition-colors ease-in-out delay-100 hover:bg-orange hover:text-darkBlue rounded-md px-3 py-2 text-base font-semibold"
-                                id="dropdown-parents-mobile" aria-expanded="true" aria-haspopup="true">
-                                Батькам
-                                <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="dropdown-menu animate-duration-1000 animate-flip-down animate-once hidden relative z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                            id="dropdown-parents-mobile-menu" role="menu" aria-orientation="vertical"
-                            aria-labelledby="menu-button" tabindex="-1">
+                        <button type="button" class="nav-btn" id="dropdown-parents-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Батькам
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-parents-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1" role="none">
                                 <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                <a href="./parents.html"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Правила зарахування до закладу</a>
-                                <a href="./parents.html#useful-info"
-                                    class="text-gray-700 block px-4 py-2 text-sm rounded-md mx-1 bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100"
-                                    role="menuitem" tabindex="-1">Корисна інформація</a>
+                                <a href="./parents.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Правила
+                                    зарахування до закладу</a>
+                                <a href="./parents.html#useful-info" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Корисна інформація</a>
                             </div>
                         </div>
                     </div>
@@ -399,10 +341,9 @@
             </div>
             <div class="relative z-20 flex justify-center mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-4xl lg:mx-0">
-                    <h2
-                        class="animate-flip-down animate-once animate-duration-1000 font-bold sm:text-6xl text-3xl text-center text-white tracking-tight">
+                    <h1 class="main-title">
                         Батькам
-                    </h2>
+                    </h1>
                 </div>
             </div>
         </div>
@@ -442,16 +383,14 @@
                     <div class="relative right-0">
                         <ul id="nav-list" class="relative flex flex-col list-none rounded-lg p-1" data-tabs="tabs"
                             role="list">
-                            <li
-                                class="text-sm lg:text-base z-30 text-gray-700 block px-2 rounded-md bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100">
+                            <li class="nav-item px-2 lg:text-base">
                                 <a href="#enrollment-rules"
                                     class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
                                     data-tab-target="" role="tab" aria-selected="true" active="">Правила зарахування до
                                     закладу
                                 </a>
                             </li>
-                            <li
-                                class="text-sm lg:text-base z-30 text-gray-700 block px-2 rounded-md bg-white border-2 border-white hover:border-solid hover:border-orange hover:text-gray-900 transition-colors ease-in-out delay-100">
+                            <li class="nav-item px-2 lg:text-base">
                                 <a href="#useful-info"
                                     class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
                                     data-tab-target="" role="tab" aria-selected="false">Корисна інформація
@@ -467,17 +406,15 @@
                 <section id="enrollment-rules" class="bg-white relative py-16">
                     <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
                         <div class="mx-auto max-w-2xl lg:mx-0">
-                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Правила зарахування
+                            <h2 class="article-title">Правила зарахування
                                 до закладу
                             </h2>
                         </div>
-                        <div
-                            class="mx-auto mt-4 max-w-2xl border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                        <article class="article-content">
                             <!-- Content -->
                             <div class="gap-2 grid grid-cols-1 sm:gap-6">
                                 <a href="https://drive.google.com/file/d/1zbZXl4H9y2D36jtDTh52gtu6jLs8bN7R/view">
-                                    <li
-                                        class="docs-items hover:translate-x-1 transition sm:flex-row p-1 h-full col-span-1 flex border-solid border-2 border-orange hover:border-darkBlue ease-in-out delay-75 rounded-2xl">
+                                    <li class="docs-item">
                                         <div class="flex justify-center items-center w-6 sm:w-12">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
                                                 viewBox="0 -256 1792 1792" version="1.1">
@@ -496,8 +433,7 @@
                                     </li>
                                 </a>
                                 <a href="https://drive.google.com/file/d/1FQPpa2bMiZ5UiDBjortLm7MoRwFOe24k/view">
-                                    <li
-                                        class="docs-items hover:translate-x-1 transition sm:flex-row p-1 h-full col-span-1 flex border-solid border-2 border-orange hover:border-darkBlue ease-in-out delay-75 rounded-2xl">
+                                    <li class="docs-item">
                                         <div class="flex justify-center items-center w-6 sm:w-12">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
                                                 viewBox="0 -256 1792 1792" version="1.1">
@@ -517,18 +453,17 @@
                                     </li>
                                 </a>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </section>
                 <!-- Корисна інформація Section -->
                 <section id="useful-info" class="bg-white relative py-16">
                     <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
                         <div class="mx-auto max-w-2xl lg:mx-0">
-                            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Корисна інформація
+                            <h2 class="article-title">Корисна інформація
                             </h2>
                         </div>
-                        <div
-                            class="mx-auto mt-4 max-w-2xl border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                        <article class="article-content">
                             <!-- Content -->
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has
@@ -544,7 +479,7 @@
                                 recently with desktop publishing software like Aldus PageMaker including versions of
                                 Lorem
                                 Ipsum.</p>
-                        </div>
+                        </article>
                     </div>
                 </section>
             </div>
@@ -555,7 +490,7 @@
         <div
             class="container flex justify-center flex-col px-5 py-16 mx-auto max-w-7xl md:items-center lg:items-start md:flex-row md:flex-no-wrap">
             <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:mt-0 md:text-left">
-                <div class="w-full px-4 lg:w-1/6 md:w-1/2">
+                <div class="footer-list">
                     <h2
                         class="mb-10 text-sm font-bold tracking-widest uppercase title-font text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
                         <a href="./index.html">Головна</a>
@@ -565,117 +500,160 @@
                         <a href="./info.html">Інформаційна прозорість</a>
                     </h2>
                 </div>
-                <div class="w-full px-4 lg:w-1/6 md:w-1/2">
+                <div class="footer-list">
                     <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
                         Освітній процес
                     </h2>
                     <nav class="mb-10 list-none">
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./education.html" class="cursor-pointer">Виховна робота</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./education.html#methodological-work" class="cursor-pointer">Методична робота</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./education.html#textbooks-choice" class="cursor-pointer">Вибір підручників</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./education.html#nush" class="cursor-pointer">НУШ</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./education.html#psychosocial-service"
                                 class="cursor-pointer">Соціально-психологічна
                                 служба</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./education.html#enrollment-expulsion" class="cursor-pointer">Зарахування та
                                 відрахування
                                 учнів</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./education.html#education-quality-service" class="cursor-pointer">Державна служба
                                 якості
                                 освіти</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./education.html#talented-children" class="cursor-pointer">Робота з обдарованими
                                 дітьми</a>
                         </li>
                     </nav>
                 </div>
-                <div class="w-full px-4 lg:w-1/6 md:w-1/2">
+                <div class="footer-list">
                     <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
                         Учням
                     </h2>
                     <nav class="mb-10 list-none">
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./students.html" class="cursor-pointer">Дистанційне навчання</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./students.html#student-government" class="cursor-pointer">Учнівське
                                 самоврядування</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./students.html#rules" class="cursor-pointer">Правила для учнів</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./students.html#trust-phones" class="cursor-pointer">Телефони довіри</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./students.html#exams" class="cursor-pointer">ЗНО / НМТ</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./students.html#actions" class="cursor-pointer">Дії в разі надзвичайних
                                 ситуацій</a>
                         </li>
                     </nav>
                 </div>
-                <div class="w-full px-4 lg:w-1/6 md:w-1/2">
+                <div class="footer-list">
                     <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
                         Учителям
                     </h2>
                     <nav class="mb-10 list-none">
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./teachers.html" class="cursor-pointer">Атестація</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./teachers.html#professional-development" class="cursor-pointer">Підвищення
                                 кваліфікації
                                 педагогів</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./teachers.html#resources" class="cursor-pointer">Освітні ресурси</a>
                         </li>
                     </nav>
                 </div>
-                <div class="w-full px-4 lg:w-1/6 md:w-1/2">
+                <div class="footer-list">
                     <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
                         Батькам
                     </h2>
                     <nav class="mb-10 list-none">
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./parents.html" class="cursor-pointer">Правила зарахування до
                                 закладу</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <li class="footer-list-item">
                             <a href="./parents.html#useful-info" class="cursor-pointer">Корисна інформація</a>
                         </li>
                     </nav>
                 </div>
-                <div class="w-full px-4 lg:w-1/6 md:w-1/2">
+                <div class="footer-list">
                     <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
                         Контакти</h2>
                     <nav class="mb-10 list-none">
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
-                            <a href="tel:+380434252215" class="cursor-pointer">+380434252215</a>
+                        <li class="footer-list-item">
+                            <a href="tel:+380434252215" class="cursor-pointer flex justify-start items-center gap-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z">
+                                    </path>
+                                </svg>
+                                +380434252215</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
-                            <a href="mailto:knz_3@ukr.net" class="cursor-pointer">knz_3@ukr.net</a>
+                        <li class="footer-list-item">
+                            <a href="mailto:knz_3@ukr.net"
+                                class="cursor-pointer flex justify-start items-center gap-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
+                                    </path>
+                                </svg>
+                                knz_3@ukr.net</a>
                         </li>
-                        <li class="mt-3 text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
-                            <a href="https://maps.app.goo.gl/ozc2grrXUkZBYQPh8" class="cursor-pointer">Україна,
-                                Вінницька область,
-                                м.Козятин, вул. Степана Бандери, 41</a>
+                        <li class="footer-list-item">
+                            <a class="cursor-pointer flex justify-start gap-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z">
+                                    </path>
+                                </svg>
+                                <p class="text-left w-2/3">
+                                    Україна, Вінницька область,
+                                    м.Козятин, вул. Степана Бандери, 41
+                                </p>
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://www.facebook.com/groups/188966575698045/"
+                                class="cursor-pointer flex justify-start items-center gap-x-1">
+                                <svg class="h-7 w-6" fill="currentColor" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 310 310" xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g id="XMLID_834_">
+                                            <path id="XMLID_835_"
+                                                d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Козятинський ліцей №3
+                            </a>
                         </li>
                     </nav>
                 </div>

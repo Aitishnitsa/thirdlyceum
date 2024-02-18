@@ -6,6 +6,7 @@ module.exports = {
       sans: ['Montserrat', 'sans-serif'],
     },
     colors: {
+      'white': '#FFFFFF',
       'orange': '#FE7A36',
       'blue': '#3652AD',
       'darkBlue': '#280274',
