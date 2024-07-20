@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Освітній процес</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body>
+    <header class="relative">
+        <nav class="bg-darkBlue relative z-10">
+            <div class="relative z-20 bg-darkBlue lg:mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="animate-fade-down relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
+                        <!-- Mobile menu button-->
+                        <a href="#" id="mobile-menu-button"
+                            class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline">
+                            <svg fill="#FFFFFF" viewBox="0 0 20 20" class="w-6 h-6">
+                                <path id="closed-menu" class="" fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                    clip-rule="evenodd">
+                                </path>
+                                <path id="opened-menu" class="hidden" fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center lg:items-stretch">
+                        <div class="hidden lg:ml-6 lg:block">
+                            <div class="flex items-center space-x-4">
+                                <a href="../index.html" class="nav-btn" aria-current="page">Головна</a>
+                                <a href="./info.html" class="nav-btn">Інформаційна
+                                    прозорість</a>
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="nav-btn" id="dropdown-education" aria-expanded="true"
+                                        aria-haspopup="true">
+                                        Освітній процес
+                                        <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-education-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="./education.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Виховна
+                                                робота</a>
+                                            <a href="./education.html#methodological-work"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem" tabindex="-1">Методична
+                                                робота</a>
+                                            <a href="./education.html#textbooks-choice" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Вибір підручників</a>
+                                            <a href="./education.html#nush" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">НУШ</a>
+                                            <a href="./education.html#psychosocial-service"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Соціально-психологічна служба</a>
+                                            <a href="./education.html#enrollment-expulsion"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Зарахування та відрахування учнів</a>
+                                            <a href="./education.html#education-quality-service"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem" tabindex="-1">Державна
+                                                служба якості освіти</a>
+                                            <a href="./education.html#talented-children" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Робота з обдарованими дітьми</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative inline-block text-left">
+                                    <div>
+                                        <button type="button" class="nav-btn" id="dropdown-students"
+                                            aria-expanded="true" aria-haspopup="true">
+                                            Учням
+                                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-students-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="./students.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Дистанційне навчання</a>
+                                            <a href="./students.html#student-government" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Учнівське самоврядування</a>
+                                            <a href="./students.html#rules" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Правила для учнів</a>
+                                            <a href="./students.html#trust-phones" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Телефони довіри</a>
+                                            <a href="./students.html#exams" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">ЗНО / НМТ</a>
+                                            <a href="./students.html#actions" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Дії в разі надзвичайних ситуацій</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="nav-btn" id="dropdown-teachers" aria-expanded="true"
+                                        aria-haspopup="true">
+                                        Учителям
+                                        <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-teachers-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="./teachers.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Атестація</a>
+                                            <a href="./teachers.html#professional-development"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem" tabindex="-1">Підвищення
+                                                кваліфікації педагогів</a>
+                                            <a href="./teachers.html#resources" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Освітні ресурси</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="nav-btn" id="dropdown-parents" aria-expanded="true"
+                                        aria-haspopup="true">
+                                        Батькам
+                                        <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-parents-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="./parents.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Правила
+                                                зарахування до закладу</a>
+                                            <a href="./parents.html#useful-info" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Корисна інформація</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
+                        <a href="https://www.facebook.com/groups/188966575698045/">
+                            <svg fill="#FFFFFF"
+                                class="h-8 w-8 p-1 rounded-sm transition-colors ease-in-out delay-100 hover:bg-blue"
+                                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="XMLID_834_">
+                                        <path id="XMLID_835_"
+                                            d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden" id="mobile-menu">
+                <div id="blur-background" class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
+                    aria-hidden="true" data-headlessui-state="open"></div>
+                <div
+                    class="animate-duration-500 animate-fade-right animate-once fixed bg-gradient-to-tl from-darkBlue to-blue h-screen space-y-1 px-2 pb-3 pt-2">
+                    <div class="relative flex flex-col">
+                        <div class="flex">
+                            <a href="../index.html" class="nav-btn" aria-current="page">Головна</a>
+                        </div>
+
+                        <div class="flex">
+                            <a href="./info.html" class="nav-btn">Інформаційна
+                                прозорість</a>
+                        </div>
+
+                        <button type="button" class="nav-btn" id="dropdown-education-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Освітній процес
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-education-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="./education.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Виховна
+                                    робота</a>
+                                <a href="./education.html#methodological-work" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Методична робота</a>
+                                <a href="./education.html#textbooks-choice" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Вибір підручників</a>
+                                <a href="./education.html#nush" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">НУШ</a>
+                                <a href="./education.html#psychosocial-service" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Соціально-психологічна служба</a>
+                                <a href="./education.html#enrollment-expulsion" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Зарахування та
+                                    відрахування учнів</a>
+                                <a href="./education.html#education-quality-service" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Державна служба
+                                    якості освіти</a>
+                                <a href="./education.html#talented-children" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Робота з
+                                    обдарованими дітьми</a>
+                            </div>
+                        </div>
+
+                        <button type="button" class="nav-btn" id="dropdown-students-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Учням
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-students-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="./students.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Дистанційне
+                                    навчання</a>
+                                <a href="./students.html#student-government" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Учнівське самоврядування</a>
+                                <a href="./students.html#rules" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Правила для учнів</a>
+                                <a href="./students.html#trust-phones" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Телефони довіри</a>
+                                <a href="./students.html#exams" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">ЗНО /
+                                    НМТ</a>
+                                <a href="./students.html#actions" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Дії
+                                    в разі надзвичайних ситуацій</a>
+                            </div>
+                        </div>
+
+                        <button type="button" class="nav-btn" id="dropdown-teachers-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Учителям
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-teachers-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="./teachers.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Атестація</a>
+                                <a href="./teachers.html#professional-development" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Підвищення кваліфікації педагогів</a>
+                                <a href="./teachers.html#resources" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Освітні ресурси</a>
+                            </div>
+                        </div>
+
+                        <button type="button" class="nav-btn" id="dropdown-parents-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Батькам
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-parents-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="./parents.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Правила
+                                    зарахування до закладу</a>
+                                <a href="./parents.html#useful-info" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Корисна інформація</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="relative isolate overflow-hidden bg-gradient-to-tr from-darkBlue to-orange py-24 sm:py-32">
+            <img src="./src/images/bgEducation.jpg" alt="background-image"
+                class="blur opacity-25 absolute inset-0 z-1 h-full w-full object-cover object-right md:object-center">
+            <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+                aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-blue opacity-30"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="absolute -top-52 left-1/2 z-1 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+                aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-blue opacity-30"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="relative z-20 flex justify-center mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-4xl lg:mx-0">
+                    <h1 class="main-title">
+                        Освітній процес
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!-- divider -->
+        <div class="w-full">
+            <svg class="absolute bottom-0" viewBox="0 0 1440 81" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                    d="M0.0,1.184 C159.155,58.828 319.316,86.45 479.999,78.6 C673.663,68.318 766.278,10.196 960.0,1.184 C1121.447,-6.325 1281.685,22.115 1440.0,80.999 L0.0,80.999 L0.0,1.184 Z" />
+            </svg>
+        </div>
+    </header>
+
+    <main class="relative pb-24">
+        <!-- Sidebar Button -->
+        <div class="sticky top-1/2 z-20 w-0 lg:hidden">
+            <svg id="sidebar-btn" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 overflow-hidden" fill="currentColor"
+                viewBox="0 0 1024 1024" version="1.1">
+                <path id="arrow-right" class=""
+                    d="M581.5 512l-273.1-273.1c-25-25-25-65.5 0-90.5s65.5-25 90.5 0l316.7 316.7c12.9 12.9 19.2 30 18.7 47 0.4 16.9-5.8 33.9-18.699 46.8l-316.8 316.8c-25 25-65.5 25-90.5 0s-25-65.5 0-90.5l273.2-273.2z"
+                    fill="#000000" />
+                <path id="arrow-left" class="hidden" xmlns="http://www.w3.org/2000/svg"
+                    d="M442.5 512l273.1 273.1c25 25 25 65.5 0 90.5s-65.5 25-90.5 0L308.4 558.9c-12.9-12.9-19.2-30-18.7-47-0.4-16.9 5.8-33.9 18.7-46.8l316.8-316.8c25-25 65.5-25 90.5 0s25 65.5 0 90.5L442.5 512z"
+                    fill="#FFFFFF" />
+            </svg>
+        </div>
+        <div id="blur-bg-sb" class="hidden backdrop-blur-sm bg-black/20 dark:bg-slate-900/80 fixed inset-0 z-10"
+            aria-hidden="true" data-headlessui-state="open"></div>
+        <div class="relative grid grid-cols-4 mx-auto max-w-7xl px-6 lg:px-8">
+            <aside id="sidebar" class="col-span-4 lg:col-span-1 lg:relative z-10">
+                <div id="sidebar-nav"
+                    class="animate-fade-right animate-once animate-duration-500 hidden lg:block sticky top-10 py-16 w-full mx-auto max-w-7xl bg-white rounded-2xl">
+                    <div class="mx-auto max-w-2xl lg:mx-0 p-1">
+                        <h2 class="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl px-2">Освітній процес
+                        </h2>
+                    </div>
+                    <div class="relative right-0">
+                        <ul id="nav-list" class="relative flex flex-col list-none rounded-lg p-1" data-tabs="tabs"
+                            role="list">
+                            <li class="nav-item px-2 lg:text-base">
+                                <a href="#educational-work"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="true" active="">Виховна
+                                    робота
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 lg:text-base">
+                                <a href="#methodological-work"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Методична
+                                    робота
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 lg:text-base">
+                                <a href="#textbooks-choice"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Вибір
+                                    підручників
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 lg:text-base">
+                                <a href="#nush"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">НУШ
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 lg:text-base">
+                                <a href="#psychosocial-service"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Соціально-психологічна служба
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 lg:text-base">
+                                <a href="#enrollment-expulsion"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Зарахування та
+                                    відрахування учнів
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 lg:text-base">
+                                <a href="#education-quality-service"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Державна служба
+                                    якості освіти
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 lg:text-base">
+                                <a href="#talented-children"
+                                    class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+                                    data-tab-target="" role="tab" aria-selected="false">Робота з
+                                    обдарованими дітьми
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="col-span-4 lg:col-span-3">
+                <!-- Виховна робота Section -->
+                <section id="educational-work" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="article-title">Виховна робота
+                            </h2>
+                        </div>
+                        <article class="article-content">
+                            <!-- Content -->
+                            <p class="mb-2">Виховна робота нашого навчального закладу заснована на таких принципах:</p>
+                            <ul class="mb-2 ml-4 list-disc">
+                                <li>турботливе ставлення один до одного;</li>
+                                <li>спільна діяльність дітей і дорослих;</li>
+                                <li>цілеспрямованість;</li>
+                                <li>творчий підхід до справи.</li>
+                            </ul>
+                            <p class="mb-2">
+                                Складовими моделі виховної системи є: людина, здоров'я, праця, творчість, дружба, любов
+                                та гуманізм.
+                            </p>
+                            <p class="mb-2 font-semibold">
+                                Структура виховної роботи навчального закладу:
+                            </p>
+                            <img src="./images/edu_struct.jpg" alt="educational structure">
+                        </article>
+                    </div>
+                </section>
+                <!-- Методична робота Section -->
+                <section id="methodological-work" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="article-title">Методична робота
+                            </h2>
+                        </div>
+                        <article class="article-content">
+                            <!-- Content -->
+                            <a href="https://drive.google.com/file/d/1rhgAI5cN5N5RQbNR_a8E1uMqi-1t2sAM/view">
+                                <li class="docs-item">
+                                    <div class="flex justify-center items-center w-6 sm:w-12">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
+                                            viewBox="0 -256 1792 1792" version="1.1">
+                                            <g transform="matrix(1,0,0,-1,242.98305,1285.4237)">
+                                                <path
+                                                    d="m 1024,352 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z m 0,256 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z M 128,0 H 1152 V 768 H 736 q -40,0 -68,28 -28,28 -28,68 v 416 H 128 V 0 z m 640,896 h 299 L 768,1195 V 896 z M 1280,768 V -32 q 0,-40 -28,-68 -28,-28 -68,-28 H 96 q -40,0 -68,28 -28,28 -28,68 v 1344 q 0,40 28,68 28,28 68,28 h 544 q 40,0 88,-20 48,-20 76,-48 l 408,-408 q 28,-28 48,-76 20,-48 20,-88 z"
+                                                    style="fill:currentColor" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div
+                                        class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                                        <p class="text-xs sm:text-base font-medium text-wrap">Перспективний план
+                                            роботи
+                                            педагогічного колективу над науково-
+                                            методичною проблемою школи «Сучасний
+                                            урок. Компетентісний підхід у навчанні і вихованні»
+                                            на 2021-2026 н.р.</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <section class="relative pt-8">
+                                <div class="mx-auto max-w-7xl">
+                                    <div class="mx-auto max-w-2xl lg:mx-0">
+                                        <h2 class="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                                            Майстер-класи
+                                        </h2>
+                                    </div>
+                                    <div class="mx-auto max-w-2xl pt-2 sm:pt-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                        <!-- Content -->
+                                        <div class="mx-auto max-w-2xl lg:mx-0">
+                                            <h3 class="text-md font-bold tracking-tight text-gray-900 sm:text-lg mb-2">
+                                                Назва
+                                                майстер-класу</h3>
+                                        </div>
+                                        <div class="grid grid-cols-6 col-span-2 gap-2">
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-1 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-3 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-3 max-h-[14rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-3 max-h-[14rem]">
+                                                <img class="h-full w-full object-cover  "
+                                                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1399&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="relative pt-8">
+                                <div class="mx-auto max-w-7xl">
+                                    <div class="mx-auto max-w-2xl lg:mx-0">
+                                        <h2 class="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">Методичні
+                                            розробки
+                                        </h2>
+                                    </div>
+                                    <div class="mx-auto max-w-2xl pt-2 sm:pt-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                        <!-- Content -->
+                                        <p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem
+                                            Ipsum has
+                                            been the industry's standard
+                                            dummy text ever since the 1500s, when an unknown printer took a galley of
+                                            type
+                                            and scrambled
+                                            it to make a type specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially
+                                            unchanged. It was popularised in the 1960s with the release of Letraset
+                                            sheets
+                                            containing
+                                            Lorem Ipsum passages, and more
+                                            recently with desktop publishing software like Aldus PageMaker including
+                                            versions of Lorem
+                                            Ipsum.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                </section>
+                <!-- Вибір підручників Section -->
+                <section id="textbooks-choice" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="article-title">Вибір
+                                підручників
+                            </h2>
+                        </div>
+                        <article class="article-content">
+                            <!-- Content -->
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing
+                                Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of
+                                Lorem
+                                Ipsum.</p>
+                        </article>
+                    </div>
+                </section>
+                <!-- НУШ Section -->
+                <section id="nush" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="article-title">НУШ
+                            </h2>
+                        </div>
+                        <article class="article-content">
+                            <!-- Content -->
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book.</p>
+                            <section class="relative pt-8">
+                                <div class="mx-auto max-w-7xl">
+                                    <div class="mx-auto max-w-2xl lg:mx-0">
+                                        <h2 class="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                                            Якийсь там захід
+                                        </h2>
+                                    </div>
+                                    <div class="mx-auto max-w-2xl pt-2 sm:pt-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                        <!-- Content -->
+                                        <p>
+                                        <div class="grid grid-cols-6 col-span-2 gap-2">
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-3 max-h-[14rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-3 max-h-[14rem]">
+                                                <img class="h-full w-full object-cover  "
+                                                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1399&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                                    alt="">
+                                            </div>
+                                            <div
+                                                class="overflow-hidden rounded-xl col-span-6 sm:col-span-2 max-h-[10rem]">
+                                                <img class="h-full w-full object-cover "
+                                                    src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                </section>
+                <!-- Соціально-психологічна служба Section -->
+                <section id="psychosocial-service" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="article-title">
+                                Соціально-психологічна
+                                служба
+                            </h2>
+                        </div>
+                        <article class="article-content">
+                            <!-- Content -->
+                            <div>
+                                <p class="mb-2">Коли наші
+                                    діти
+                                    ще маленькі, ми робимо все можливе, щоб допомогти їм
+                                    отримати якомога більше користі від Інтернету, при цьому дбаючи про їхню
+                                    безпеку онлайн.
+                                    Коли діти стають підлітками, наша роль змінюється — ми маємо допомогти їм
+                                    навчитися безпечно та обачно орієнтуватися в цифровій частині свого життя.
+                                    У ліцеї №3 ми віримо, що завдяки співпраці з батьками ми можемо
+                                    підготувати наших учнів та навчити їх:
+                                </p>
+                                <ul class="mb-2 ml-4 list-disc">
+                                    <li>критично мислити й оцінювати додатки, веб-сайти та інший цифровий контент;</li>
+                                    <li>захищатися від інтернет-загроз, у тому числі від цькування та шахрайства;</li>
+                                    <li>ділитися з обачністю й розуміти, чим, коли, як та з ким це можна робити;</li>
+                                    <li>бути добрими та ввічливими до інших людей в Інтернеті, у тому числі поважати
+                                        їх приватність;</li>
+                                    <li>просити про допомогу в складних ситуаціях у батьків або інших дорослих, яким
+                                        вони довіряють.</li>
+                                </ul>
+                                <p class="mb-2">
+                                    Цього року ми викладатимемо комплексну навчальну програму безпеки
+                                    дітей в Інтернеті, щоб дати дітям навички, необхідні для того, щоб дбати про
+                                    свою безпеку в мережі Інтернет. Одним із ресурсів програми є браузерна гра
+                                    Interland, яка допомагає навчатися в інтерактивному й цікавому форматі. У
+                                    цю гру також можна грати вдома (ваша дитина зможе показати вам, як це
+                                    робиться). Програма безпеки дітей в Інтернеті розроблялася компанією Google
+                                    разом із викладачами, дослідниками та експертами з питань інтернет-безпеки з
+                                    організацій The Net Safety Collaborative та
+                                    iKeepSafe.org. Це веселе навчання, що
+                                    відповідає віку дітей і побудоване на базі п’яти основних уроків:
+                                </p>
+                                <ul class="mb-2 ml-4 list-disc">
+                                    <li>Ділися з обачністю</li>
+                                    <li>Не дай себе обманути</li>
+                                    <li>Бережи свої таємниці</li>
+                                    <li>Круто бути доброзичливим</li>
+                                    <li>Сумніваєшся? Спитай!</li>
+                                </ul>
+                                <p class="mb-2">
+                                    Обачне та безпечне використання технологій може мотивувати учнів навчатися
+                                    самостійно та зробити заняття в класі ще ефективнішими. Ми віримо, що ця
+                                    програма стане важливим кроком у досягненні нашої мети — зробити так,
+                                    щоб усі учні ліцею №3 навчались, досліджували та залишались у безпеці в
+                                    інтернеті як у школі, так і за її межами.
+                                </p>
+                                <p class="mb-2">
+                                    Ми будемо раді поділитися додатковою інформацією про цю нову програму й
+                                    ознайомити вас із деякими ресурсами, які ваша дитина почне використовувати
+                                    в класі, а також пропонуємо вам переглянути супутні ресурси програми на сайті <a
+                                        href="https://beinternetawesome.withgoogle.com/en_us/"
+                                        class="text-blue hover:text-orange transition-colors ease-in-out delay-100 font-semibold">BeInternetAwesome</a>
+                                    . Радимо вам запитати свою дитину про те, що вона
+                                    вивчає; і хто знає, можливо, ви також дізнаєтеся для себе щось нове та корисне
+                                    про конфіденційність і безпеку!</p>
+
+                            </div>
+                            <section class="relative pt-8">
+                                <div class="mx-auto max-w-7xl">
+                                    <div class="mx-auto max-w-2xl lg:mx-0 mb-2 sm:mb-4">
+                                        <h2 class="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">Довірені
+                                            номери соціально-психологічних служб
+                                        </h2>
+                                    </div>
+                                    <div
+                                        class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:grid-cols-3 overflow-auto p-2 border-2 border-orange rounded-lg">
+                                        <!-- Content -->
+                                        <table
+                                            class="table-auto snap-x overflow-x-auto border-collapse border border-slate-400 border-spacing-2">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Лінія
+                                                        Національної
+                                                        психологічної
+                                                        асоціації</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        10:00-20:00 щодня, дзвінки
+                                                        безкоштовні</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:0800100102"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">0
+                                                            800
+                                                            100 102</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Лінія
+                                                        кризової допомоги та
+                                                        підтримки Українського ветеранського фонду при
+                                                        Мінветеранів</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        цілодобово, дзвінки
+                                                        безкоштовні</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:0800332029"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">0
+                                                            800 33 20 29</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Лінія
+                                                        міжнародної
+                                                        гуманітарної організації «Людина в біді»</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        цілодобово, дзвінки
+                                                        безкоштовні</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:0800210160"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">0
+                                                            800 210 160</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        Національна гаряча лінія з
+                                                        попередження домашнього насильства, торгівлі
+                                                        людьми та
+                                                        гендерної дискримінації ГО «Ла
+                                                        Страда-Україна»</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        цілодобово, дзвінки
+                                                        безкоштовні</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:0800500335"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">0
+                                                            800 500 335</a> (з мобільного або стаціонарного)<br>
+                                                        <a href="tel:116123"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">116
+                                                            123</a> (з мобільного)
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Урядова
+                                                        «Гаряча лінія»</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        цілодобово, дзвінки
+                                                        безкоштовні</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:1545"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">1545</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Гаряча
+                                                        лінія з питань
+                                                        протидії торгівлі людьми та домашньому насиллю</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        цілодобово, дзвінки
+                                                        безкоштовні</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:1547"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">1547</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Лінія
+                                                        запобігання
+                                                        самогубствам Lifeline Ukraine</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        цілодобово</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:7333"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">7333</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Лінія
+                                                        емоційної підтримки
+                                                        МОМ</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">з 10:00
+                                                        до 20:00 щодня,
+                                                        дзвінки безкоштовні</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:0800211444"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">0
+                                                            800 211 444</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Гаряча
+                                                        лінія Служби
+                                                        психосоціальної підтримки військовослужбовців та їх
+                                                        сімей ГО
+                                                        "Громадський рух "Жіноча сила України"</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">з 10:00
+                                                        до 20:00 щодня,
+                                                        дзвінки безкоштовні</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:0800332720"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">0
+                                                            800 332 720</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Гаряча
+                                                        лінія з питань
+                                                        ВІЛ/СНІД БО «Фонд профілактики хімічних залежностей та
+                                                        СНІДУ»</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        цілодобово, безкоштовно; в
+                                                        т.ч.
+                                                        психологічна підтримка
+                                                        для людей які живуть з ВІЛ та їх близького оточення</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:0800500451"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">0
+                                                            800 500 451</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        Загальнонаціональна гаряча
+                                                        лінія з питань туберкульозу БО «Фонд профілактики
+                                                        хімічних
+                                                        залежностей та СНІДУ»</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        08:00-18:00, безкоштовно; в
+                                                        т.ч. психологічна підтримка
+                                                        для людей, які хворіють на туберкульоз та їх близького оточення
+                                                    </td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:0800503080"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">0
+                                                            800 503 080</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Лінія
+                                                        психологічної
+                                                        підтримки для чоловіків, що реалізується UNFPA, Фондом
+                                                        ООН у галузі
+                                                        народонаселення в Україні, за
+                                                        підтримки уряду Великої Британії у співпраці з ГО «Інноваційні
+                                                        соціальні
+                                                        рішення»</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">сервіс
+                                                        психологічної
+                                                        підтримки, де чоловіки можуть отримати фахову
+                                                        психологічну
+                                                        допомогу анонімно і безкоштовно,
+                                                        цілодобово</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:2345"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">2345</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">Єдиний
+                                                        телефонний номер
+                                                        системи безоплатної правничої допомоги в Україні</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        понеділок-п'ятниця,
+                                                        08:00-18:00, дзвінки безкоштовні;
+                                                        *для дзвінків з-за кордону за тарифами оператора зв'язку</td>
+                                                    <td class="border border-slate-300 p-2 text-xs sm:text-base">
+                                                        <a href="tel:0800213103"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">0
+                                                            800 213 103</a>
+                                                        <br>
+                                                        <a href="tel:380443631041"
+                                                            class="text-blue hover:text-orange transition-colors ease-in-out delay-100">+38
+                                                            044 363 10 41</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                </section>
+                <!-- Зарахування та відрахування учнів Section -->
+                <section id="enrollment-expulsion" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="article-title">Зарахування та
+                                відрахування учнів
+                            </h2>
+                        </div>
+                        <article class="article-content">
+                            <!-- Content -->
+                            <div class="gap-2 grid grid-cols-1 sm:gap-6">
+                                <a
+                                    href="https://mon.gov.ua/storage/app/media/news/%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/2018/05/10/1_nakaz_367.pdf">
+                                    <li class="docs-item">
+                                        <div class="flex justify-center items-center w-6 sm:w-12">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
+                                                viewBox="0 -256 1792 1792" version="1.1">
+                                                <g transform="matrix(1,0,0,-1,242.98305,1285.4237)">
+                                                    <path
+                                                        d="m 1024,352 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z m 0,256 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z M 128,0 H 1152 V 768 H 736 q -40,0 -68,28 -28,28 -28,68 v 416 H 128 V 0 z m 640,896 h 299 L 768,1195 V 896 z M 1280,768 V -32 q 0,-40 -28,-68 -28,-28 -68,-28 H 96 q -40,0 -68,28 -28,28 -28,68 v 1344 q 0,40 28,68 28,28 68,28 h 544 q 40,0 88,-20 48,-20 76,-48 l 408,-408 q 28,-28 48,-76 20,-48 20,-88 z"
+                                                        style="fill:currentColor" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                                            <p class="text-xs sm:text-base font-medium text-wrap">Наказ "Про
+                                                затвердження
+                                                Порядку
+                                                зарахування, відрахування та
+                                                переведення учнів до державних
+                                                та комунальних закладів освіти
+                                                для здобуття повної загальної
+                                                середньої освіти"</p>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a
+                                    href="https://mon.gov.ua/storage/app/media/npa/2018/05/11/2rozyasnennya-do-poryadku-zarakhuvannya.pdf">
+                                    <li class="docs-item">
+                                        <div class="flex justify-center items-center w-6 sm:w-12">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
+                                                viewBox="0 -256 1792 1792" version="1.1">
+                                                <g transform="matrix(1,0,0,-1,242.98305,1285.4237)">
+                                                    <path
+                                                        d="m 1024,352 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z m 0,256 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z M 128,0 H 1152 V 768 H 736 q -40,0 -68,28 -28,28 -28,68 v 416 H 128 V 0 z m 640,896 h 299 L 768,1195 V 896 z M 1280,768 V -32 q 0,-40 -28,-68 -28,-28 -68,-28 H 96 q -40,0 -68,28 -28,28 -28,68 v 1344 q 0,40 28,68 28,28 68,28 h 544 q 40,0 88,-20 48,-20 76,-48 l 408,-408 q 28,-28 48,-76 20,-48 20,-88 z"
+                                                        style="fill:currentColor" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                                            <p class="text-xs sm:text-base font-medium text-wrap">Лист-роз'яснення
+                                                щодо застосування окремих положень нового Порядку зарахування,
+                                                відрахування та переведення учнів до державних та комунальних закладів
+                                                освіти для здобуття повної загальної середньої освіти
+                                            </p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- Державна служба якості освіти Section -->
+                <section id="education-quality-service" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="article-title">Державна служба
+                                якості
+                                освіти
+                            </h2>
+                        </div>
+                        <article class="article-content">
+                            <!-- Content -->
+                            <div class="flex flex-col sm:flex-row">
+                                <img src="https://sqe.gov.ua/wp-content/themes/dsio/img/logo.svg" alt="logo"
+                                    class="p-2 sm:p-4">
+                                <p class="mb-2">Державна служба якості освіти України утворена 6 грудня 2017 року, є
+                                    центральним
+                                    органом
+                                    виконавчої влади, діяльність
+                                    якого спрямовується і координується Кабінетом Міністрів України через Міністра
+                                    освіти і
+                                    науки та який реалізує державну
+                                    політику у сфері освіти, зокрема з питань забезпечення якості освіти,
+                                    забезпечення
+                                    якості освітньої діяльності,
+                                    здійснення державного нагляду (контролю) за закладами освіти щодо дотримання
+                                    ними
+                                    законодавства.
+                                </p>
+                            </div>
+                            <p class="mb-2">
+                                Державна служба якості освіти:
+                            </p>
+                            <ul class="mb-2 ml-4 list-disc">
+                                <li>
+                                    опікується питанням дотримання якості освіти та освітніх стандартів у
+                                    дошкільній,
+                                    загальній середній, позашкільній,
+                                    фаховій передвищій освіті
+                                </li>
+                                <li>
+                                    допомагає закладам освіти підвищувати якість освітньої діяльності,
+                                    гарантувати
+                                    якість
+                                    освіти та формувати довіру
+                                    суспільства до української освіти
+                                </li>
+                            </ul>
+                            <p class="mb-2">Вебсайт: <a href="https://sqe.gov.ua/"
+                                    class="text-blue font-semibold hover:text-orange transition-colors ease-in-out delay-100">https://sqe.gov.ua/</a>
+                            </p>
+                        </article>
+                    </div>
+                </section>
+                <!-- Робота з обдарованими дітьми Section -->
+                <section id="talented-children" class="bg-white relative py-16">
+                    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="article-title">Робота з
+                                обдарованими
+                                дітьми
+                            </h2>
+                        </div>
+                        <article class="article-content">
+                            <!-- Content -->
+                            <div class="gap-2 grid grid-cols-1 sm:gap-6">
+                                <a href="https://drive.google.com/file/d/1rK5TW0oHGQBNXP7dJODiHewiTM9SbCYl/view">
+                                    <li class="docs-item">
+                                        <div class="flex justify-center items-center w-6 sm:w-12">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
+                                                viewBox="0 -256 1792 1792" version="1.1">
+                                                <g transform="matrix(1,0,0,-1,242.98305,1285.4237)">
+                                                    <path
+                                                        d="m 1024,352 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z m 0,256 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z M 128,0 H 1152 V 768 H 736 q -40,0 -68,28 -28,28 -28,68 v 416 H 128 V 0 z m 640,896 h 299 L 768,1195 V 896 z M 1280,768 V -32 q 0,-40 -28,-68 -28,-28 -68,-28 H 96 q -40,0 -68,28 -28,28 -28,68 v 1344 q 0,40 28,68 28,28 68,28 h 544 q 40,0 88,-20 48,-20 76,-48 l 408,-408 q 28,-28 48,-76 20,-48 20,-88 z"
+                                                        style="fill:currentColor" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                                            <p class="text-xs sm:text-base font-medium text-wrap">Особливості роботи з
+                                                обдарованими учнями</p>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1RnjYJUZWGgVfl2C7TooT4XPNWUyTPhEB/view">
+                                    <li class="docs-item">
+                                        <div class="flex justify-center items-center w-6 sm:w-12">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
+                                                viewBox="0 -256 1792 1792" version="1.1">
+                                                <g transform="matrix(1,0,0,-1,242.98305,1285.4237)">
+                                                    <path
+                                                        d="m 1024,352 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z m 0,256 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z M 128,0 H 1152 V 768 H 736 q -40,0 -68,28 -28,28 -28,68 v 416 H 128 V 0 z m 640,896 h 299 L 768,1195 V 896 z M 1280,768 V -32 q 0,-40 -28,-68 -28,-28 -68,-28 H 96 q -40,0 -68,28 -28,28 -28,68 v 1344 q 0,40 28,68 28,28 68,28 h 544 q 40,0 88,-20 48,-20 76,-48 l 408,-408 q 28,-28 48,-76 20,-48 20,-88 z"
+                                                        style="fill:currentColor" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                                            <p class="text-xs sm:text-base font-medium text-wrap">Анкета для виявлення
+                                                обдарованих дітей
+                                            </p>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1fOWC2DP8AqOgFlTwmBs6NXAFR5QjLHOS/view">
+                                    <li class="docs-item">
+                                        <div class="flex justify-center items-center w-6 sm:w-12">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
+                                                viewBox="0 -256 1792 1792" version="1.1">
+                                                <g transform="matrix(1,0,0,-1,242.98305,1285.4237)">
+                                                    <path
+                                                        d="m 1024,352 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z m 0,256 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z M 128,0 H 1152 V 768 H 736 q -40,0 -68,28 -28,28 -28,68 v 416 H 128 V 0 z m 640,896 h 299 L 768,1195 V 896 z M 1280,768 V -32 q 0,-40 -28,-68 -28,-28 -68,-28 H 96 q -40,0 -68,28 -28,28 -28,68 v 1344 q 0,40 28,68 28,28 68,28 h 544 q 40,0 88,-20 48,-20 76,-48 l 408,-408 q 28,-28 48,-76 20,-48 20,-88 z"
+                                                        style="fill:currentColor" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                                            <p class="text-xs sm:text-base font-medium text-wrap">Види обдарованості
+
+                                            </p>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1ywv8CCc9r1Q45WwEyWLMtqABj0xQX6bR/view">
+                                    <li class="docs-item">
+                                        <div class="flex justify-center items-center w-6 sm:w-12">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
+                                                viewBox="0 -256 1792 1792" version="1.1">
+                                                <g transform="matrix(1,0,0,-1,242.98305,1285.4237)">
+                                                    <path
+                                                        d="m 1024,352 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z m 0,256 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z M 128,0 H 1152 V 768 H 736 q -40,0 -68,28 -28,28 -28,68 v 416 H 128 V 0 z m 640,896 h 299 L 768,1195 V 896 z M 1280,768 V -32 q 0,-40 -28,-68 -28,-28 -68,-28 H 96 q -40,0 -68,28 -28,28 -28,68 v 1344 q 0,40 28,68 28,28 68,28 h 544 q 40,0 88,-20 48,-20 76,-48 l 408,-408 q 28,-28 48,-76 20,-48 20,-88 z"
+                                                        style="fill:currentColor" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                                            <p class="text-xs sm:text-base font-medium text-wrap">Як розвивати творчі
+                                                здібності
+                                            </p>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="https://drive.google.com/file/d/155GBqkpnYqMy6KUzoc5IfndzsXt7mQpt/view">
+                                    <li class="docs-item">
+                                        <div class="flex justify-center items-center w-6 sm:w-12">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
+                                                viewBox="0 -256 1792 1792" version="1.1">
+                                                <g transform="matrix(1,0,0,-1,242.98305,1285.4237)">
+                                                    <path
+                                                        d="m 1024,352 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z m 0,256 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z M 128,0 H 1152 V 768 H 736 q -40,0 -68,28 -28,28 -28,68 v 416 H 128 V 0 z m 640,896 h 299 L 768,1195 V 896 z M 1280,768 V -32 q 0,-40 -28,-68 -28,-28 -68,-28 H 96 q -40,0 -68,28 -28,28 -28,68 v 1344 q 0,40 28,68 28,28 68,28 h 544 q 40,0 88,-20 48,-20 76,-48 l 408,-408 q 28,-28 48,-76 20,-48 20,-88 z"
+                                                        style="fill:currentColor" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                                            <p class="text-xs sm:text-base font-medium text-wrap">Поради батькам
+                                                обдарованих дітей
+                                            </p>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1MJdMfP7gqBPNHJjbNMzkMT8k4VlisEow/view">
+                                    <li class="docs-item">
+                                        <div class="flex justify-center items-center w-6 sm:w-12">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8"
+                                                viewBox="0 -256 1792 1792" version="1.1">
+                                                <g transform="matrix(1,0,0,-1,242.98305,1285.4237)">
+                                                    <path
+                                                        d="m 1024,352 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z m 0,256 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -14,0 -23,9 -9,9 -9,23 v 64 q 0,14 9,23 9,9 23,9 h 704 q 14,0 23,-9 9,-9 9,-23 z M 128,0 H 1152 V 768 H 736 q -40,0 -68,28 -28,28 -28,68 v 416 H 128 V 0 z m 640,896 h 299 L 768,1195 V 896 z M 1280,768 V -32 q 0,-40 -28,-68 -28,-28 -68,-28 H 96 q -40,0 -68,28 -28,28 -28,68 v 1344 q 0,40 28,68 28,28 68,28 h 544 q 40,0 88,-20 48,-20 76,-48 l 408,-408 q 28,-28 48,-76 20,-48 20,-88 z"
+                                                        style="fill:currentColor" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="sm:py-2 sm:px-4 items-center flex flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                                            <p class="text-xs sm:text-base font-medium text-wrap">Психологічні
+                                                особливості обдарованих дітей
+                                            </p>
+                                        </div>
+                                    </li>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full text-lightBlue bg-darkBlue body-font relative isolate overflow-hidden">
+        <div
+            class="container flex justify-center flex-col px-5 py-16 mx-auto max-w-7xl md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+            <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:mt-0 md:text-left">
+                <div class="footer-list">
+                    <h2
+                        class="mb-10 text-sm font-bold tracking-widest uppercase title-font text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <a href="../index.html">Головна</a>
+                    </h2>
+                    <h2
+                        class="mb-10 text-sm font-bold tracking-widest uppercase title-font text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <a href="./info.html">Інформаційна прозорість</a>
+                    </h2>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Освітній процес
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="./education.html" class="cursor-pointer">Виховна робота</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#methodological-work" class="cursor-pointer">Методична робота</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#textbooks-choice" class="cursor-pointer">Вибір підручників</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#nush" class="cursor-pointer">НУШ</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#psychosocial-service"
+                                class="cursor-pointer">Соціально-психологічна
+                                служба</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#enrollment-expulsion" class="cursor-pointer">Зарахування та
+                                відрахування
+                                учнів</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#education-quality-service" class="cursor-pointer">Державна служба
+                                якості
+                                освіти</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#talented-children" class="cursor-pointer">Робота з обдарованими
+                                дітьми</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Учням
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="./students.html" class="cursor-pointer">Дистанційне навчання</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#student-government" class="cursor-pointer">Учнівське
+                                самоврядування</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#rules" class="cursor-pointer">Правила для учнів</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#trust-phones" class="cursor-pointer">Телефони довіри</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#exams" class="cursor-pointer">ЗНО / НМТ</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#actions" class="cursor-pointer">Дії в разі надзвичайних
+                                ситуацій</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Учителям
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="./teachers.html" class="cursor-pointer">Атестація</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./teachers.html#professional-development" class="cursor-pointer">Підвищення
+                                кваліфікації
+                                педагогів</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./teachers.html#resources" class="cursor-pointer">Освітні ресурси</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Батькам
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="./parents.html" class="cursor-pointer">Правила зарахування до
+                                закладу</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./parents.html#useful-info" class="cursor-pointer">Корисна інформація</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Контакти</h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="tel:+380434252215" class="cursor-pointer flex justify-start items-center gap-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z">
+                                    </path>
+                                </svg>
+                                +380434252215</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="mailto:knz_3@ukr.net"
+                                class="cursor-pointer flex justify-start items-center gap-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
+                                    </path>
+                                </svg>
+                                knz_3@ukr.net</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a class="cursor-pointer flex justify-start gap-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z">
+                                    </path>
+                                </svg>
+                                <p class="text-left w-2/3">
+                                    Україна, Вінницька область,
+                                    м.Козятин, вул. Степана Бандери, 41
+                                </p>
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://www.facebook.com/groups/188966575698045/"
+                                class="cursor-pointer flex justify-start items-center gap-x-1">
+                                <svg class="h-7 w-6" fill="currentColor" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 310 310" xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g id="XMLID_834_">
+                                            <path id="XMLID_835_"
+                                                d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Козятинський ліцей №3
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="go-top"
+        class="animate-flip-up animate-once animate-duration-1000 animate-delay-100 animate-ease-out hidden fixed bottom-5 right-2 z-50">
+        <svg class="h-10 w-10 sm:h-14 sm:w-14 text-orange" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" stroke="currentColor" stroke-width="30px" stroke-linecap="butt"
+                stroke-linejoin="miter" fill="none"
+                d="M 250.001 50.001 C 360.457 50.001 450 139.544 450 250.001 C 450 360.457 360.457 450 250.001 450 C 139.544 450 50.001 360.457 50.001 250.001 C 50.001 139.544 139.544 50.001 250.001 50.001 Z" />
+            <path fill-rule="evenodd" fill="currentColor"
+                d="M 164.122 313.348 L 250.122 227.347 L 336.122 313.348 C 343.638 319.648 354.438 318.81 361.122 312.348 C 368.483 305.545 368.729 294.027 362.122 286.347 C 329.122 253.348 296.122 220.348 263.122 187.347 C 259.549 184.038 254.444 181.493 249.123 181.348 C 244.373 181.484 239.461 183.671 236.123 187.347 C 203.123 220.348 170.123 253.348 137.123 286.347 C 131.866 293.835 131.733 305.234 137.123 312.348 C 144.08 319.833 156.228 321.248 164.122 313.348 Z"
+                style="transform-origin: 9.171px 25px;" />
+        </svg>
+    </a>
+
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/sidebarNav.js"></script>
+</body>
+
+</html>
