@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ліцей №3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+    <header class="relative">
+        <nav class="bg-darkBlue relative z-10">
+            <div class="relative z-20 bg-darkBlue lg:mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="animate-fade-down relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
+                        <!-- Mobile menu button-->
+                        <a href="#" id="mobile-menu-button"
+                            class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline">
+                            <svg fill="#FFFFFF" viewBox="0 0 20 20" class="w-6 h-6">
+                                <path id="closed-menu" class="" fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                    clip-rule="evenodd">
+                                </path>
+                                <path id="opened-menu" class="hidden" fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center lg:items-stretch">
+                        <div class="hidden lg:ml-6 lg:block">
+                            <div class="flex items-center space-x-4">
+                                <a href="./index.html" class="nav-btn" aria-current="page">Головна</a>
+                                <a href="./info.html" class="nav-btn">Інформаційна
+                                    прозорість</a>
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="nav-btn" id="dropdown-education" aria-expanded="true"
+                                        aria-haspopup="true">
+                                        Освітній процес
+                                        <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-education-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="./education.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Виховна робота</a>
+                                            <a href="./education.html#methodological-work"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem" tabindex="-1">Методична
+                                                робота</a>
+                                            <a href="./education.html#textbooks-choice" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Вибір
+                                                підручників</a>
+                                            <a href="./education.html#nush" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">НУШ</a>
+                                            <a href="./education.html#psychosocial-service"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Соціально-психологічна служба</a>
+                                            <a href="./education.html#enrollment-expulsion"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Зарахування та відрахування учнів</a>
+                                            <a href="./education.html#education-quality-service"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem" tabindex="-1">Державна
+                                                служба якості освіти</a>
+                                            <a href="./education.html#talented-children" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Робота з
+                                                обдарованими дітьми</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative inline-block text-left">
+                                    <div>
+                                        <button type="button" class="nav-btn" id="dropdown-students"
+                                            aria-expanded="true" aria-haspopup="true">
+                                            Учням
+                                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-students-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="./students.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Дистанційне навчання</a>
+                                            <a href="./students.html#student-government" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Учнівське
+                                                самоврядування</a>
+                                            <a href="./students.html#rules" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Правила для учнів</a>
+                                            <a href="./students.html#trust-phones" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Телефони довіри</a>
+                                            <a href="./students.html#exams" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">ЗНО / НМТ</a>
+                                            <a href="./students.html#actions" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Дії в разі надзвичайних ситуацій</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="nav-btn" id="dropdown-teachers" aria-expanded="true"
+                                        aria-haspopup="true">
+                                        Учителям
+                                        <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-teachers-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="./teachers.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Атестація</a>
+                                            <a href="./teachers.html#professional-development"
+                                                class="nav-item px-4 py-2 mx-1" role="menuitem" tabindex="-1">Підвищення
+                                                кваліфікації педагогів</a>
+                                            <a href="./teachers.html#resources" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Освітні ресурси</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="nav-btn" id="dropdown-parents" aria-expanded="true"
+                                        aria-haspopup="true">
+                                        Батькам
+                                        <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="dropdown-menu hidden absolute right-0" id="dropdown-parents-menu"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="./parents.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                                tabindex="-1">Правила зарахування до закладу</a>
+                                            <a href="./parents.html#useful-info" class="nav-item px-4 py-2 mx-1"
+                                                role="menuitem" tabindex="-1">Корисна інформація</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
+                        <a href="https://www.facebook.com/groups/188966575698045/">
+                            <svg fill="#FFFFFF"
+                                class="h-8 w-8 p-1 rounded-sm transition-colors ease-in-out delay-100 hover:bg-blue"
+                                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="XMLID_834_">
+                                        <path id="XMLID_835_"
+                                            d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden" id="mobile-menu">
+                <div id="blur-background" class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
+                    aria-hidden="true" data-headlessui-state="open"></div>
+                <div
+                    class="animate-duration-500 animate-fade-right animate-once fixed bg-gradient-to-tl from-darkBlue to-blue h-screen space-y-1 px-2 pb-3 pt-2">
+                    <div class="relative flex flex-col">
+                        <div class="flex">
+                            <a href="./index.html" class="nav-btn" aria-current="page">Головна</a>
+                        </div>
+
+                        <div class="flex">
+                            <a href="./info.html" class="nav-btn">Інформаційна
+                                прозорість</a>
+                        </div>
+
+                        <button type="button" class="nav-btn" id="dropdown-education-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Освітній процес
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-education-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="./education.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Виховна робота</a>
+                                <a href="./education.html#methodological-work" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Методична робота</a>
+                                <a href="./education.html#textbooks-choice" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Вибір підручників</a>
+                                <a href="./education.html#nush" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">НУШ</a>
+                                <a href="./education.html#psychosocial-service" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Соціально-психологічна служба</a>
+                                <a href="./education.html#enrollment-expulsion" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Зарахування та
+                                    відрахування учнів</a>
+                                <a href="./education.html#education-quality-service" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Державна служба
+                                    якості освіти</a>
+                                <a href="./education.html#talented-children" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Робота з
+                                    обдарованими дітьми</a>
+                            </div>
+                        </div>
+
+                        <button type="button" class="nav-btn" id="dropdown-students-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Учням
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-students-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="./students.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Дистанційне навчання</a>
+                                <a href="./students.html#student-government" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Учнівське самоврядування</a>
+                                <a href="./students.html#rules" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Правила для учнів</a>
+                                <a href="./students.html#trust-phones" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Телефони довіри</a>
+                                <a href="./students.html#exams" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">ЗНО / НМТ</a>
+                                <a href="./students.html#actions" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Дії в разі надзвичайних ситуацій</a>
+                            </div>
+                        </div>
+
+                        <button type="button" class="nav-btn" id="dropdown-teachers-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Учителям
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-teachers-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="./teachers.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Атестація</a>
+                                <a href="./teachers.html#professional-development" class="nav-item px-4 py-2 mx-1"
+                                    role="menuitem" tabindex="-1">Підвищення кваліфікації педагогів</a>
+                                <a href="./teachers.html#resources" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Освітні ресурси</a>
+                            </div>
+                        </div>
+
+                        <button type="button" class="nav-btn" id="dropdown-parents-mobile" aria-expanded="true"
+                            aria-haspopup="true">
+                            Батькам
+                            <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu hidden relative" id="dropdown-parents-mobile-menu" role="menu"
+                            aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="./parents.html" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Правила зарахування до закладу</a>
+                                <a href="./parents.html#useful-info" class="nav-item px-4 py-2 mx-1" role="menuitem"
+                                    tabindex="-1">Корисна інформація</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="relative isolate overflow-hidden bg-gradient-to-tr from-darkBlue to-orange py-24 sm:py-32">
+            <img src="./src/images/bg.jpg" alt="background-image"
+                class="opacity-25 absolute inset-0 z-1 h-full w-full object-cover object-right md:object-center">
+            <div class="relative z-20 mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-4xl lg:mx-0">
+                    <h1
+                        class="animate-fade-right animate-once animate-duration-1000 animate-ease-out text-3xl font-bold tracking-tight text-white sm:text-6xl">
+                        Комунальний
+                        заклад <br>
+                        "Ліцей №3
+                        Козятинської міської ради Вінницької області"</h1>
+                </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 80"
+                class="absolute bottom-0">
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                    d="M0.0,80.0 L1440.0,0.0 L1440.0,80.0 L0.0,80.0 Z" />
+            </svg>
+        </div>
+    </header>
+
+    <main class="bg-gradient-to-br from-darkBlue to-blue">
+        <!-- Statictics -->
+        <div class="relative bg-white py-16 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-1">
+                <dl
+                    class="animate-fade animate-once animate-duration-1000 animate-delay-500 grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt
+                            class="animate-fade-down animate-once animate-duration-1000 animate-delay-1000 text-base leading-7 text-blue">
+                            які навчаються у 12 класах</dt>
+                        <dd
+                            class="animate-bounce animate-twice animate-delay-500 animate-ease-in animate-fill-forwards order-first text-3xl font-semibold tracking-tight text-grau-900 sm:text-5xl">
+                            276
+                            учнів</dd>
+                    </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt
+                            class="animate-fade-down animate-once animate-duration-1000 animate-delay-1000 text-base leading-7 text-blue">
+                            які щороку підвищують кваліфікацію</dt>
+                        <dd
+                            class="animate-bounce animate-twice animate-delay-500 animate-ease-in animate-fill-forwards order-first text-3xl font-semibold tracking-tight text-grau-900 sm:text-5xl">
+                            26
+                            учителів</dd>
+                    </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt
+                            class="animate-fade-down animate-once animate-duration-1000 animate-delay-1000 text-base leading-7 text-blue">
+                            мова викладання
+                        </dt>
+                        <dd
+                            class="animate-bounce animate-twice animate-delay-500 animate-ease-in animate-fill-forwards order-first text-3xl font-semibold tracking-tight text-grau-900 sm:text-5xl">
+                            Українська</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 80"
+                    class="absolute top-full">
+                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                        d="M1440.0,0.0 L0.0,80.0 L0.0,0.0 L1440.0,0.0 Z" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="bg-gradient-to-bl from-lightBlue to-blue py-16 sm:py-32">
+            <section class="relative mx-auto max-w-7xl px-6 lg:px-8 text-gray-700 body-font">
+                <div id="history" class="opacity-0 rounded-2xl isolate bg-white px-6 py-8 sm:py-32 lg:px-8">
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8 relative md:items-start md:text-left md:mb-0 items-center text-center">
+                        <div class="col-span-2 sm:col-span-1">
+                            <h2 class="article-title mb-4">Історія</h2>
+                            <p class="leading-relaxed text-left text-sm indent-2 sm:text-base sm:indent-0">
+                                Будівництво школи №3 розпочалося у 1951 році під пильним наглядом місцевого
+                                співтовариства, яке висловило бажання мати
+                                власний навчальний заклад. Уже в лютому 1952 року головний навчальний корпус був
+                                готовий
+                                до експлуатації. Школа спочатку
+                                підпорядковувалася відділу учбових закладів Південно-Західної залізниці під №35, а з
+                                1960 року отримала статус Середньої
+                                школи №3.
+                            </p>
+                            <p
+                                class="hidden hidden-paragraphs leading-relaxed text-left text-sm indent-2 sm:text-base sm:indent-0 mt-6">
+                                Першим директором став Безверхов Микола Григорович, який очолював колектив з
+                                1952 по
+                                1963 роки. У 1955 році учні та їхні
+                                батьки спільними зусиллями будували майстерню, де функціонувала дослідницька
+                                ділянка
+                                та
+                                кролеферма. У 1958 році в школі
+                                з'явився духовий оркестр, якого очолювали Ярмоленко Анатолій Іванович та
+                                Гвелесіані
+                                Олександр Георгійович.
+                            </p>
+                            <button id="read-history" class="mt-4 secondary-btn">
+                                Читати далі
+                            </button>
+                        </div>
+                        <div id="history-img" class="flex h-full col-span-2 sm:col-span-1 w-full">
+                            <img class="object-cover object-center rounded-2xl" alt="hero"
+                                src="./src/images/school.jpg">
+                        </div>
+                        <p
+                            class="hidden hidden-paragraphs col-span-2 leading-relaxed text-left text-sm indent-2 sm:text-base sm:indent-0">
+                            У 1963-1966 роках школою керували Драмарецький Анатолій Кузьмич та Ткачук Ернест
+                            Петрович. З 1966 по 1973 рік директором
+                            був Дацько Василь Андрійович, ветеран Великої Вітчизняної війни. Його керівництво
+                            відзначалося міцними зв'язками з
+                            колективом вагонного депо.
+                        </p>
+                        <p
+                            class="hidden hidden-paragraphs col-span-2 leading-relaxed text-left text-sm indent-2 sm:text-base sm:indent-0">
+                            З 1973 по 1990 рр. школою очолював Бохонко Іван Сергійович. У цей період вона стала
+                            однією з найкращих у Козятинському
+                            районі та встановила дружбу із колективом швейної фабрики.
+                        </p>
+                        <p
+                            class="hidden hidden-paragraphs col-span-2 leading-relaxed text-left text-sm indent-2 sm:text-base sm:indent-0">
+                            З 1990 р. по 1995 р. директором став Савицький Юрий Станіславович. На зміну йому
+                            прийшов
+                            Лівшиць Ігор Йосипович
+                            (1995-2004), який поклав акцент на виховну роботу та екологічні ініціативи.
+                        </p>
+                        <p
+                            class="hidden hidden-paragraphs col-span-2 leading-relaxed text-left text-sm indent-2 sm:text-base sm:indent-0">
+                            З 2004 р. школою керує Лисюк Ліана Олексіївна, під час її керівництва відбулися
+                            значущі
+                            зміни та розвиток виховної
+                            роботи. Завдяки дбайливому керівництву Колісника Миколи Васильовича, який очолив
+                            колектив у 2013 році, школа продовжує
+                            здобувати нові вершини та розвиватися.
+                        </p>
+                        <div class="col-span-2 flex justify-center">
+                            <button id="hide-history" class="hidden secondary-btn">
+                                Згорнути
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Blog Section -->
+        <div id="blog-section" class="bg-white relative py-16 sm:py-32">
+            <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                    <h2 class="article-title">Новини
+                    </h2>
+                </div>
+                <div id="articles-container"
+                    class="opacity-0 mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-blue pt-10 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    <!-- Facebook Posts... -->
+                </div>
+
+                <div id="loader" class="flex items-center justify-center p-5 min-w-screen">
+                    <div class="flex space-x-2 animate-pulse">
+                        <div class="w-3 h-3 bg-gray-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-gray-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-gray-500 rounded-full"></div>
+                    </div>
+                </div>
+
+                <div class="relative z-10 flex justify-center">
+                    <button id="read-more-btn" class="mt-4 secondary-btn">
+                        Більше новин
+                    </button>
+                </div>
+                <div class="sticky z-10 bottom-4 flex justify-center">
+                    <a href="#blog-section">
+                        <button id="show-less-btn" class="mt-4 secondary-btn hidden">
+                            Сховати новини
+                        </button>
+                    </a>
+                </div>
+                <div id="white-shadow"
+                    class="absolute top-2/3 left-0 right-0 bottom-0 bg-gradient-to-t from-white to-transparent">
+                </div>
+            </div>
+            <div class="w-full h-8">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 89" class="absolute -bottom-1">
+                    <defs>
+                        <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#280274" />
+                            <stop offset="100%" style="stop-color:#3652AD" />
+                        </linearGradient>
+                    </defs>
+
+                    <path fill="url(#myGradient)" fill-opacity="1"
+                        d="M0.0,89.0 L0.0,60.999 C85.797,22.512 173.277,16.933 260.0,24.0 C353.674,31.633 396.97,57.61 489.999,60.999 C612.269,66.127 660.938,32.591 779.0,26.0 C930.852,17.522 994.190,51.844 1138.999,59.999 C1239.75,65.636 1340.49,42.165 1440.0,0.0 L1440.0,89.0 " />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Contacts & Email Section -->
+        <div class="relative bg-gradient-to-r from-darkBlue to-blue ">
+            <div id="alert-container" class="fixed top-2 z-20 mx-auto w-full flex justify-center">
+            </div>
+            <div
+                class="relative z-10 grid grid-cols-1 col-start-2 lg:grid-cols-2 gap-8 px-6 lg:px-8 py-8 mx-auto max-w-7xl">
+                <!-- Contacts -->
+                <div id="contacts-section"
+                    class="rounded-2xl isolate bg-white px-6 py-8 sm:py-32 lg:px-8 flex flex-col items-center">
+                    <div class="mx-auto text-center">
+                        <h2 class="article-title">Контакти</h2>
+                    </div>
+                    <ul class="list-none mt-8 sm:mt-16 text-left">
+                        <li class="mt-3">
+                            <a href="tel:+380434252215"
+                                class="text-gray-500 cursor-pointer transition-colors ease-in-out delay-100 hover:text-blue flex items-center gap-x-1 mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z">
+                                    </path>
+                                </svg>
+                                +380434252215</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="mailto:knz_3@ukr.net"
+                                class="text-gray-500 cursor-pointer transition-colors ease-in-out delay-100 hover:text-blue flex items-center gap-x-1 mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
+                                    </path>
+                                </svg>
+                                knz_3@ukr.net</a>
+                        </li>
+                        <li class="mt-3 max-w-lg">
+                            <a
+                                class="text-gray-500 cursor-pointer transition-colors ease-in-out delay-100 hover:text-blue flex gap-x-1 mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z">
+                                    </path>
+                                </svg>
+                                <p class="text-left w-2/3">
+                                    Україна, Вінницька область,
+                                    м.Козятин, вул. Степана Бандери, 41
+                                </p>
+                            </a>
+                        </li>
+                        <li class="mt-3 max-w-lg">
+                            <a href="https://www.facebook.com/groups/188966575698045/"
+                                class="text-gray-500 cursor-pointer transition-colors ease-in-out delay-100 hover:text-blue flex items-center gap-x-1 mt-2">
+                                <svg class="h-7 w-6" fill="currentColor" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 310 310" xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g id="XMLID_834_">
+                                            <path id="XMLID_835_"
+                                                d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Козятинський ліцей №3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Form -->
+                <div id="email-section" class="rounded-2xl isolate bg-white px-6 py-8 sm:py-32 lg:px-8">
+                    <div class="mx-auto max-w-2xl text-center">
+                        <h2 class="article-title">Напишіть нам</h2>
+                        <!-- <p class="mt-2 text-lg leading-8 text-gray-600">...якщо з'явились питання -->
+                        </p>
+                    </div>
+                    <form id="contact-form" class="mx-auto mt-8 sm:mt-16 max-w-xl">
+                        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                            <div class="sm:col-span-2">
+                                <label for="name"
+                                    class="after:content-['*'] after:ml-0.5 after:text-orange block text-sm font-semibold leading-6 text-gray-900">Ім'я</label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="from_name" id="name" autocomplete="name" required
+                                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="email"
+                                    class="after:content-['*'] after:ml-0.5 after:text-orange block text-sm font-semibold leading-6 text-gray-900">Email</label>
+                                <div class="mt-2.5">
+                                    <input type="email" name="from_email" id="email" autocomplete="email" required
+                                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="message"
+                                    class="after:content-['*'] after:ml-0.5 after:text-orange block text-sm font-semibold leading-6 text-gray-900">Повідомлення</label>
+                                <div class="mt-2.5">
+                                    <textarea name="message" id="message" rows="4" required
+                                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <button type="submit" value="Send"
+                                class="block w-full rounded-md bg-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-colors ease-in-out delay-100 hover:bg-orange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Відправити</button>
+                        </div>
+                        <!-- <div id="alert-container">
+                            <div data-dismissible="alert" role="alert"
+                                class="font-semibold relative flex w-full rounded-lg bg-orange px-4 py-4 text-base text-darkBlue">
+                                <div class="shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="ml-3 mr-12">${message}</div>
+                            </div>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+            <div
+                class="absolute z-0 top-1/2 left-0 right-0 bottom-0 bg-gradient-to-t from-orange to-transparent opacity-75">
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full text-lightBlue bg-darkBlue body-font relative isolate overflow-hidden">
+        <div
+            class="container flex justify-center flex-col px-5 py-16 mx-auto max-w-7xl md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+            <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:mt-0 md:text-left">
+                <div class="footer-list">
+                    <h2
+                        class="mb-10 text-sm font-bold tracking-widest uppercase title-font text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <a href="./index.html">Головна</a>
+                    </h2>
+                    <h2
+                        class="mb-10 text-sm font-bold tracking-widest uppercase title-font text-white hover:text-lightBlue transition-colors ease-in-out delay-100">
+                        <a href="./info.html">Інформаційна прозорість</a>
+                    </h2>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Освітній процес
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="./education.html" class="cursor-pointer">Виховна робота</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#methodological-work" class="cursor-pointer">Методична
+                                робота</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#textbooks-choice" class="cursor-pointer">Вибір підручників</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#nush" class="cursor-pointer">НУШ</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#psychosocial-service"
+                                class="cursor-pointer">Соціально-психологічна
+                                служба</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#enrollment-expulsion" class="cursor-pointer">Зарахування та
+                                відрахування
+                                учнів</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#education-quality-service" class="cursor-pointer">Державна
+                                служба
+                                якості
+                                освіти</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./education.html#talented-children" class="cursor-pointer">Робота з
+                                обдарованими
+                                дітьми</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Учням
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="./students.html" class="cursor-pointer">Дистанційне навчання</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#student-government" class="cursor-pointer">Учнівське
+                                самоврядування</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#rules" class="cursor-pointer">Правила для учнів</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#trust-phones" class="cursor-pointer">Телефони довіри</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#exams" class="cursor-pointer">ЗНО / НМТ</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./students.html#actions" class="cursor-pointer">Дії в разі надзвичайних
+                                ситуацій</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Учителям
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="./teachers.html" class="cursor-pointer">Атестація</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./teachers.html#professional-development" class="cursor-pointer">Підвищення
+                                кваліфікації
+                                педагогів</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./teachers.html#resources" class="cursor-pointer">Освітні ресурси</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Батькам
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="./parents.html" class="cursor-pointer">Правила зарахування до
+                                закладу</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="./parents.html#useful-info" class="cursor-pointer">Корисна інформація</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="footer-list">
+                    <h2 class="mb-3 text-sm font-bold tracking-widest uppercase title-font text-white">
+                        Контакти</h2>
+                    <nav class="mb-10 list-none">
+                        <li class="footer-list-item">
+                            <a href="tel:+380434252215" class="cursor-pointer flex justify-start items-center gap-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z">
+                                    </path>
+                                </svg>
+                                +380434252215</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="mailto:knz_3@ukr.net"
+                                class="cursor-pointer flex justify-start items-center gap-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
+                                    </path>
+                                </svg>
+                                knz_3@ukr.net</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a class="cursor-pointer flex justify-start gap-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z">
+                                    </path>
+                                </svg>
+                                <p class="text-left w-2/3">
+                                    Україна, Вінницька область,
+                                    м.Козятин, вул. Степана Бандери, 41
+                                </p>
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="https://www.facebook.com/groups/188966575698045/"
+                                class="cursor-pointer flex justify-start items-center gap-x-1">
+                                <svg class="h-7 w-6" fill="currentColor" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 310 310" xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g id="XMLID_834_">
+                                            <path id="XMLID_835_"
+                                                d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Козятинський ліцей №3
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./src/js/email.js"></script>
+    <script src="./src/js/embed.js"></script>
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/showHistory.js"></script>
+</body>
+
+</html>
